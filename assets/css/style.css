@@ -3,3 +3,15 @@
     padding: 0;
     border: none;
 }
+
+#header-area, #search-seed-area {
+    padding: 0 16px;
+}
+
+#header-area {
+    margin-top: 100px;
+}
+
+#header-area > h1 {
+    font-size: 48px;
+}
