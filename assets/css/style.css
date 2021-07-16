@@ -37,17 +37,17 @@
 
 #seed-input, #analyse-button {
     padding: 16px;
-    font-size: 16px;
 }
 
 #seed-input {
-    float: left;
-    width: 80%;
+    width: 100%;
     background-color: hsl(0, 0%, 93%);
+    font-size: 16px;
 }
 
 #analyse-button {
     float: right;
-    width: 20%;
+    width: 172px;
     background-color: white;
+    font-size: 20px;
 }
