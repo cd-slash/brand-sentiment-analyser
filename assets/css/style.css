@@ -28,7 +28,7 @@
     margin-top: 16px;
 }
 
-#input-container {
+#search-seed-container {
     display: flex;
 
     border: 1px solid hsl(0, 0%, 35%);
