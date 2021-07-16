@@ -6,7 +6,7 @@
 
 /* Header */
 
-#header-area, #input-area {
+#header-area {
     padding: 0 16px;
 }
 
@@ -25,7 +25,7 @@
 /* Input area */
 
 #input-area {
-    margin-top: 16px;
+    margin: 16px;
 }
 
 #search-seed-container {
