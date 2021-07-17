@@ -35,19 +35,27 @@ make the text more readable with the background image */
 }
 
 #header-area > h1 {
-    font-family: 'Big Shoulders Text', Arial, Helvetica, sans-serif;
-    font-size: 48px;
+    font-family: 'Righteous', Arial, Helvetica, sans-serif;
+    font-size: 64px;
 }
 
 #header-area > h2 {
     font-family: 'Contrail One', Arial, Helvetica, sans-serif;
-    font-size: 24px;
+    font-size: 32px;
+    margin-top: 32px;
+}
+
+#title-search-seed {
+    color: orangered;
+    text-decoration: underline;
+    text-decoration-thickness: 4px;
+    text-decoration-skip-ink: auto;
 }
 
 /* Input area */
 
 #input-area {
-    margin: 16px 32px;
+    margin: 16px 32px 32px 32px;
 }
 
 #search-seed-container {
