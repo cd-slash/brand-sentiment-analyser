@@ -14,11 +14,18 @@
 
 body {
     height: 100vh;
-    padding: 0;
     background-image: url('../images/seth-weisfeld-IuXt3YN-BDs-unsplash.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: bottom;
+}
+
+/* the background image is a partially transparent white background to 
+make the text more readable with the background image */
+
+#gradient-container {
+    height: 70vh;
+    background-image: linear-gradient(to bottom, rgba(255,255,255,0.9), rgba(255,255,255,0));
 }
 
 /* Header */
