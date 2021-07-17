@@ -1,4 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+/* import Google fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Contrail+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Text&family=Contrail+One&display=swap');
 
 * {
     margin: 0;
@@ -21,11 +24,12 @@ body {
 }
 
 #header-area > h1 {
-    font-family: Lobster, Arial, Helvetica, sans-serif;
+    font-family: 'Big Shoulders Text', Arial, Helvetica, sans-serif;
     font-size: 48px;
 }
 
 #header-area > h2 {
+    font-family: 'Contrail One', Arial, Helvetica, sans-serif;
     font-size: 24px;
 }
 
