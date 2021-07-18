@@ -54,11 +54,8 @@ make the text more readable with the background image */
 
 /* Input area */
 
-#input-area {
-    margin-top: 16px;
-    margin-bottom: 32px;
-    margin-left: 32px;
-    margin-right: 32px;
+#input-area, #results-area {
+    margin: 32px;
 }
 
 #search-seed-container {
@@ -86,6 +83,14 @@ make the text more readable with the background image */
     font-size: 20px;
 }
 
+/* Results area */
+
+.results-box {
+    width: 100%;
+    background-color: orangered;
+}
+
+/* media queries for responsiveness */
 /* smaller tablets */
 @media screen and (max-width: 900px) {
 
@@ -126,6 +131,10 @@ make the text more readable with the background image */
 
     #header-area {
         padding: 100px 24px 0px 24px;
+    }
+
+    #input-area, #results-area {
+        margin: 24px;
     }
     
     #header-area > h1 {
