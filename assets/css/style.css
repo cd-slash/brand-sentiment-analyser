@@ -85,6 +85,11 @@ make the text more readable with the background image */
 
 /* Results area */
 
+#results-area {
+    display: flex;
+    gap: 32px;
+}
+
 .results-box {
     width: 100%;
     background-color: orangered;
@@ -135,6 +140,10 @@ make the text more readable with the background image */
 
     #input-area, #results-area {
         margin: 24px;
+    }
+
+    #results-area {
+        gap: 24px;
     }
     
     #header-area > h1 {
