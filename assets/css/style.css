@@ -150,13 +150,6 @@ make the text more readable with the background image */
         text-decoration-thickness: 2px;
     }
 
-    #input-area {
-        margin-top: 12px;
-        margin-bottom: 24px;
-        margin-left: 24px;
-        margin-right: 24px;
-    }
-
     #seed-input {
         font-size: 14px;
     }
