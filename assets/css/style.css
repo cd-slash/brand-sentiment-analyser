@@ -88,10 +88,18 @@ make the text more readable with the background image */
 #results-area {
     display: flex;
     gap: 32px;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .results-box {
-    width: 100%;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    min-width: 240px;
+    max-width: 520px;
+    flex-basis: auto;
     background-color: orangered;
 }
 
