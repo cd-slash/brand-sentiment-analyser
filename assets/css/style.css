@@ -129,9 +129,10 @@ be taller than the image and would leave an abrupt end at the bottom */
     display: flex;
     flex-direction: column;
     flex-grow: 1;
+    flex-basis: 0;
     min-width: 240px;
     max-width: 520px;
-    flex-basis: auto;
+    height: 360px;
     background-color: orangered;
 }
 
