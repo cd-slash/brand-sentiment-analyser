@@ -64,7 +64,7 @@ make the text more readable with the background image */
 
 /* Input area */
 
-#input-area, #results-area {
+#input-area, #results-outer-container {
     margin: 32px;
 }
 
@@ -135,6 +135,23 @@ be taller than the image and would leave an abrupt end at the bottom */
     background-color: orangered;
 }
 
+.results-box-header {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.results-box-header * {
+    color: white;
+}
+
+.results-box-header i {
+    font-size: 130%;
+}
+
 /* media queries for responsiveness */
 /* smaller tablets */
 @media screen and (max-width: 900px) {
@@ -146,6 +163,14 @@ be taller than the image and would leave an abrupt end at the bottom */
     #header-area > h2 {
         font-size: 28px;
         margin-top: 24px;
+    }
+
+    #results-area-header > h2 {
+        margin: 0 24px;
+    }
+
+    #results-area-header {
+        margin-bottom: 24px;
     }
 
 }
@@ -178,7 +203,7 @@ be taller than the image and would leave an abrupt end at the bottom */
         padding: 100px 24px 0px 24px;
     }
 
-    #input-area, #results-area {
+    #input-area, #results-outer-container {
         margin: 24px;
     }
 
