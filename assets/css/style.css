@@ -2,6 +2,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Contrail+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap');
 
 * {
     margin: 0;
@@ -30,12 +31,23 @@ make the text more readable with the background image */
 
 /* font families */
 
+/* make Roboto standard, then override specific areas below */
+* {
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-weight: 300;
+}
+
 #header-area > h1 {
     font-family: 'Righteous', Arial, Helvetica, sans-serif;
 }
 
-#header-area h2, #analyse-button, #results-area-header h2, .results-box-header h3 {
+#header-area h2, #results-area-header h2, .results-box-header h3 {
     font-family: 'Contrail One', Arial, Helvetica, sans-serif;
+}
+
+#analyse-button {
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-weight: 500;
 }
 
 /* Header */
