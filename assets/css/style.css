@@ -184,6 +184,14 @@ be taller than the image and would leave an abrupt end at the bottom */
     color:hsl(0, 0%, 30%)
 }
 
+/* Remove bottom margin on bottom list item to avoid double 
+width border at the bottom of the results box */
+
+.results-box-body > ul > li:last-child {
+    margin-bottom: 0;
+}
+
+
 /* media queries for responsiveness */
 /* smaller tablets */
 @media screen and (max-width: 900px) {
