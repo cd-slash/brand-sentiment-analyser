@@ -177,11 +177,19 @@ be taller than the image and would leave an abrupt end at the bottom */
 }
 
 .results-box-body > ul > li {
+    display: flex;
+    justify-content: space-between;
+
     margin: 16px 0;
     padding: 12px;
     background-color: hsl(0, 0%, 95%);
     border-radius: 4px;
     color:hsl(0, 0%, 30%)
+}
+
+.add-to-research {
+    color: green;
+    font-size: 20px;
 }
 
 /* Remove bottom margin on bottom list item to avoid double 
