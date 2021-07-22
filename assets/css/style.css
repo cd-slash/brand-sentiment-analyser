@@ -138,6 +138,7 @@ be taller than the image and would leave an abrupt end at the bottom */
 
 .results-box {
     padding: 16px;
+    border-radius: 8px;
     display: flex;
     flex-direction: column;
     flex-grow: 1;
