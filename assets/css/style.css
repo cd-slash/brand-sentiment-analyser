@@ -134,6 +134,8 @@ be taller than the image and would leave an abrupt end at the bottom */
     justify-content: space-between;
 }
 
+/* Results lists */
+
 .results-box {
     padding: 16px;
     display: flex;
@@ -152,7 +154,8 @@ be taller than the image and would leave an abrupt end at the bottom */
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 16px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid hsl(0, 0%, 95%);
 }
 
 .results-box-header * {
@@ -161,6 +164,18 @@ be taller than the image and would leave an abrupt end at the bottom */
 
 .results-box-header i {
     font-size: 130%;
+}
+
+.results-box-body ul {
+    list-style-type: none;
+}
+
+.results-box-body > ul > li {
+    margin: 16px 0;
+    padding: 8px;
+    background-color: hsl(0, 0%, 95%);
+    border-radius: 4px;
+    color:hsl(0, 0%, 30%)
 }
 
 /* media queries for responsiveness */
