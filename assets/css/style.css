@@ -166,6 +166,10 @@ be taller than the image and would leave an abrupt end at the bottom */
     font-size: 130%;
 }
 
+.results-box-body {
+    overflow: hidden;
+}
+
 .results-box-body ul {
     list-style-type: none;
 }
