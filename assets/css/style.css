@@ -131,19 +131,19 @@ be taller than the image and would leave an abrupt end at the bottom */
 #results-container {
     display: grid;
     grid-gap: 32px;
-    grid-template-columns: repeat(auto-fit, 350px);
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     max-width: 1200px;
+    justify-items: center;
 }
 
 /* Results lists */
 
 .results-box {
+    width: 100%;
     padding: 16px;
     border-radius: 8px;
     display: flex;
     flex-direction: column;
-    flex-grow: 1;
-    flex-basis: 0;
     background-color: orangered;
 }
 
