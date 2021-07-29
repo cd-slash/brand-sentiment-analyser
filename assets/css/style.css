@@ -172,7 +172,7 @@ be taller than the image and would leave an abrupt end at the bottom */
     list-style-type: none;
 }
 
-.results-box-body > ul > li {
+.list-item {
     display: flex;
     justify-content: space-between;
 
