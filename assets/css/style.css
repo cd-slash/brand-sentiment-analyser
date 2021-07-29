@@ -19,6 +19,7 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: bottom;
+    
 }
 
 /* the background image is a partially transparent white background to 
@@ -128,10 +129,10 @@ be taller than the image and would leave an abrupt end at the bottom */
 }
 
 #results-container {
-    display: flex;
-    gap: 32px;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    display: grid;
+    grid-gap: 32px;
+    grid-template-columns: repeat(auto-fit, 350px);
+    max-width: 1200px;
 }
 
 /* Results lists */
@@ -143,10 +144,6 @@ be taller than the image and would leave an abrupt end at the bottom */
     flex-direction: column;
     flex-grow: 1;
     flex-basis: 0;
-    min-width: 240px;
-    max-width: 520px;
-    min-height: 240px;
-    max-height: 480px;
     background-color: orangered;
 }
 
