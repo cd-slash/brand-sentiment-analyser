@@ -75,7 +75,7 @@ make the text more readable with the background image */
 
 /* Input area */
 
-#input-area, #results-outer-container {
+#input-area, #results-outer-container, #footer {
     margin: 32px;
 }
 
@@ -193,6 +193,17 @@ width border at the bottom of the list box */
 
 .list-box-body > ul > li:last-child {
     margin-bottom: 0;
+}
+
+
+/* Footer - stays visible at bottom of screen when results shown */
+
+#footer {
+    width: auto;
+}
+
+#footer-header {
+    border-top: 1px solid hsl(0, 0%, 95%);
 }
 
 
