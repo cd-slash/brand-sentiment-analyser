@@ -38,7 +38,7 @@ make the text more readable with the background image */
     font-weight: 300;
 }
 
-#header-area > h1,  #header-area > h1 > span {
+#header-area > h1,  #header-area > h1 > span, #further-research-quantity > span {
     font-family: 'Righteous', Arial, Helvetica, sans-serif;
 }
 
@@ -198,14 +198,35 @@ width border at the bottom of the list box */
 
 /* Footer - stays visible at bottom of screen when results shown */
 
+/* footer to hold button displaying number of items in further research list */
+
 #footer {
-    width: auto;
+    height: 120px;
+    width: 100%;
+    z-index: 2;
+    position: fixed;
+    bottom: 0;
 }
 
-#footer-header {
-    border-top: 1px solid hsl(0, 0%, 95%);
+#further-research-quantity {
+    position: absolute;
+    bottom: 32px;
+    right: 32px;
+    height: 80px;
+    line-height: 80px; /* set equal to container height to vertically align number in circle */
+    width: 80px;
+    text-align: center;
+    border-radius: 50%;
+    background-color: black;
 }
 
+#further-research-quantity > span {
+    display: inline-block;
+    vertical-align: middle;
+    line-height: normal;
+    color: white;
+    font-size: 56px;
+}
 
 /* media queries for responsiveness */
 /* smaller tablets */
