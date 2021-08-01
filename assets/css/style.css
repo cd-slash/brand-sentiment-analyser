@@ -75,7 +75,7 @@ make the text more readable with the background image */
 
 /* Input area */
 
-#input-area, #results-outer-container, #footer {
+#input-area, #results-outer-container, #further-research {
     margin: 32px;
 }
 
@@ -196,7 +196,20 @@ width border at the bottom of the list box */
 }
 
 
-/* Footer - stays visible at bottom of screen when results shown */
+/* Further research - hidden until user clicks to expand */
+/* code derived from https://www.w3schools.com/howto/howto_css_overlay.asp */
+
+#further-research {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(255,255,255,0.2);
+}
 
 /* footer to hold button displaying number of items in further research list */
 
