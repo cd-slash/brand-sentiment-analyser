@@ -8,4 +8,4 @@ get /top
 get /questions
 get /competitors
 get /concerns
-get /suggestions
+get /suggestions/:seed
