@@ -5,3 +5,6 @@ search-analyser
 
 @http
 get /top
+get /questions
+get /competitors
+get /concerns
