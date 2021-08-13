@@ -13,12 +13,11 @@ exports.handler = async function http(req) {
     // long url - using multi-line string instead of template literals for easier reading
     const response = await fetch(
         "https://www.google.com/complete/search?q="
-        + req.pathParameters.seed
+        + req.pathParameters.seed // parameter passed in from url (/suggestions/:seed) 
         + "&cp=1&client=gws-wiz&xssi=t",
         requestOptions);
 
-    // parameters passed in from url (e.g. /suggestions/:seed) are accessed 
-    // through req.pathParameters
+    
     let jsonString = await response.text();
 
     return {
