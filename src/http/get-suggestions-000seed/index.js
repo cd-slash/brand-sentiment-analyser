@@ -18,12 +18,15 @@ exports.handler = async function http(req) {
         requestOptions);
 
     // fetch is asynchronous, so use await to avoid returning an empty result
-    
-    let jsonString = await response.text();
+    let responseText = await response.text();
+    // response has some "JSON hijacking" protection characters at the start
+    // so substring is used to strip leading characters that invalidate JSON
+    // see: https://stackoverflow.com/questions/26955167/json-data-that-starts-with-closing-brackets
+    const responseJSON = JSON.parse(responseText.substring(4));
 
     return {
         headers: { 'content-type': 'application/json; charset=utf8' },
         statusCode: 200,
-        body: JSON.stringify(jsonString)
+        body: JSON.stringify(responseJSON)
     }
 }
