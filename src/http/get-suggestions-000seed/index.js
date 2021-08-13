@@ -22,7 +22,7 @@ exports.handler = async function http(req) {
     // response has some "JSON hijacking" protection characters at the start
     // so substring is used to strip leading characters that invalidate JSON
     // see: https://stackoverflow.com/questions/26955167/json-data-that-starts-with-closing-brackets
-    const responseJSON = JSON.parse(responseText.substring(5));
+    const responseJSON = JSON.parse(responseText.substring(5))[0]; // responses are in the first JSON node
 
     return {
         headers: { 'content-type': 'application/json; charset=utf8' },
