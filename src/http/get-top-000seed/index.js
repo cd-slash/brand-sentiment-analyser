@@ -4,9 +4,7 @@ exports.handler = async function http(req) {
     
     // req.pathparameters accesses the parameters from the url (e.g. seed in /top/:seed)
     const seed = req.pathParameters.seed;
-    const suggestionsJSON = await Suggestions.getSuggestions(seed);
-
-    let results = suggestionsJSON.map(x => x[0]).filter(x => x != seed);
+    const results = await Suggestions.getSuggestions(seed);
 
     return {
         headers: { 'content-type': 'application/json; charset=utf8' },
