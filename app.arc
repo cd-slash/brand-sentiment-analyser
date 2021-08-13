@@ -5,6 +5,6 @@ search-analyser
 
 @http
 get /top/:seed
-get /questions
-get /competitors
-get /concerns
+get /questions/:seed
+get /competitors/:seed
+get /concerns/:seed
