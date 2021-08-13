@@ -1,15 +1,15 @@
+const fetch = require("node-fetch");
+
+const myHeaders = new fetch.Headers();
+myHeaders.append("Cookie", "CONSENT=PENDING+855");
+
+const requestOptions = {
+    method: 'GET',
+    headers: myHeaders,
+    redirect: 'follow'
+};
+
 async function getSuggestions(seed) {
-    
-    const fetch = require("node-fetch");
-
-    const myHeaders = new fetch.Headers();
-    myHeaders.append("Cookie", "CONSENT=PENDING+855");
-
-    const requestOptions = {
-        method: 'GET',
-        headers: myHeaders,
-        redirect: 'follow'
-    };
 
     // long url - using multi-line string instead of template literals for easier reading
     const response = await fetch(
@@ -32,4 +32,19 @@ async function getSuggestions(seed) {
     return results;
 }
 
+async function combinedSuggestionLists(
+    seed, seedModifier1, seedModifier2, returnLength1, returnLength2
+) {
+    const resultsList1 = await getSuggestions(`${seedModifier1} ${seed}`);
+    const resultsList2 = await getSuggestions(`${seed} ${seedModifier2}`);
+
+    // combine lists using ES6 destructuring
+    return [
+        ...resultsList1.slice(1, returnLength1 + 1),
+        ...resultsList2.slice(1, returnLength2 + 1)
+    ];
+
+}
+
+module.exports.combinedSuggestionLists = combinedSuggestionLists;
 module.exports.getSuggestions = getSuggestions;
