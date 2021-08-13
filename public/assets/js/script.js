@@ -5,7 +5,7 @@ function analyseSearches() {
 
 function populateResultsList(listName, results) {
     const resultsList = document.getElementById(listName + '-list');
-    // TODO: truncate the number of results so it doesn't exceed number of list items
+    
     results.forEach((result, i) => {
         const resultElement = resultsList.children[i];
         // results box is hidden (display=none) by default
