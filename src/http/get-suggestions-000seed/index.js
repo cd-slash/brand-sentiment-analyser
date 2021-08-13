@@ -17,6 +17,7 @@ exports.handler = async function http(req) {
         + "&cp=1&client=gws-wiz&xssi=t",
         requestOptions);
 
+    // fetch is asynchronous, so use await to avoid returning an empty result
     
     let jsonString = await response.text();
 
