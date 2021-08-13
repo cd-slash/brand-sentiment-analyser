@@ -23,10 +23,12 @@ exports.handler = async function http(req) {
     // so substring is used to strip leading characters that invalidate JSON
     // see: https://stackoverflow.com/questions/26955167/json-data-that-starts-with-closing-brackets
     const responseJSON = JSON.parse(responseText.substring(5))[0]; // responses are in the first JSON node
+    // suggestions are first item in each sub-array; map to function that extracts first element from each
+    const suggestions = responseJSON.map(x => x[0]);
 
     return {
         headers: { 'content-type': 'application/json; charset=utf8' },
         statusCode: 200,
-        body: JSON.stringify(responseJSON)
+        body: JSON.stringify(suggestions)
     }
 }
