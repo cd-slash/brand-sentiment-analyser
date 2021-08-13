@@ -1,7 +1,7 @@
 {
-  "name": "begin-app",
-  "version": "0.0.0",
-  "description": "A simple Begin app with the minimum necessary file structure",
+  "name": "search-analyser",
+  "version": "0.0.1",
+  "description": "Find out what users are searching for about any brand!",
   "scripts": {
     "start": "npx sandbox"
   },
