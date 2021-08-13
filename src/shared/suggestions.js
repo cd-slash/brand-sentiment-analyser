@@ -26,7 +26,7 @@ async function getSuggestions(seed) {
     const responseJSON = JSON.parse(responseText.substring(5));
     
     const results = responseJSON[0].map(x => x[0] // result is first item in each sub-node
-            .replace('<b>', '').replace('</b>', '')) // remove bold tags
+            .replace(/<b>/g, '').replace(/<\/b>/g, '')) // remove bold tags
         .filter(x => x != seed); // filter out the seed itself
     
     return results;
