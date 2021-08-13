@@ -1,4 +1,4 @@
-let Suggestions = require('@architect/shared/suggestions')
+const Suggestions = require('@architect/shared/suggestions')
 
 exports.handler = async function http(req) {
     
