@@ -1,6 +1,9 @@
 exports.handler = async function http(req) {
 
-    let jsonString = {1: "Peloton<b> bike</b>", 2: "Peloton<b> treadmill</b>"}
+    let jsonString = {
+        1: `${req.pathParameters.seed}<b> bike</b>`,
+        2: `${req.pathParameters.seed}<b> treadmill</b>`
+    }
 
     return {
         headers: { 'content-type': 'application/json; charset=utf8' },
