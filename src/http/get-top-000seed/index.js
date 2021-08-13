@@ -6,7 +6,7 @@ exports.handler = async function http(req) {
     const seed = req.pathParameters.seed;
     const suggestionsJSON = await Suggestions.getSuggestions(seed);
 
-    let results = suggestionsJSON.map(x => x[0]);
+    let results = suggestionsJSON.map(x => x[0]).filter(x => x != seed);
 
     return {
         headers: { 'content-type': 'application/json; charset=utf8' },
