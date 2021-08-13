@@ -2,7 +2,8 @@ let Suggestions = require('@architect/shared/suggestions')
 
 exports.handler = async function http(req) {
     
-    const results = await Suggestions.getSuggestions('Peloton');
+    // req.pathparameters accesses the parameters from the url (e.g. seed in /top/:seed)
+    const results = await Suggestions.getSuggestions(req.pathParameters.seed);
 
     return {
         headers: { 'content-type': 'application/json; charset=utf8' },
