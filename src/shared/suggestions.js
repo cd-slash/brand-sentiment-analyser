@@ -25,12 +25,11 @@ async function getSuggestions(seed) {
     // see: https://stackoverflow.com/questions/26955167/json-data-that-starts-with-closing-brackets
     const responseJSON = JSON.parse(responseText.substring(5));
     
-    // get actual results (first item in each array), removing bold tags
-    let results = responseJSON[0]
-        .map(x => x[0].replace('<b>', '').replace('</b>', '')) 
+    const results = responseJSON[0].map(x => x[0] // result is first item in each sub-node
+            .replace('<b>', '').replace('</b>', '')) // remove bold tags
         .filter(x => x != seed); // filter out the seed itself
     
-    return results; // actual suggestions are in the first JSON node
+    return results;
 }
 
 module.exports.getSuggestions = getSuggestions;
