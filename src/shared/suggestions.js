@@ -20,13 +20,12 @@ async function getSuggestions(seed) {
     
     // fetch is asynchronous, so use await to avoid returning an empty result
     let responseText = await response.text();
+    
     // response has "JSON hijacking" protection characters at the start; substring strips these
     // see: https://stackoverflow.com/questions/26955167/json-data-that-starts-with-closing-brackets
     const responseJSON = JSON.parse(responseText.substring(5));
-    // actual suggestions are first item in each sub-array in first node
-    const suggestions = responseJSON[0].map(x => x[0]);
     
-    return JSON.stringify(suggestions)
+    return responseJSON[0]; // actual suggestions are in the first JSON node
 }
 
 module.exports.getSuggestions = getSuggestions;
