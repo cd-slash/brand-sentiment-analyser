@@ -1,6 +1,9 @@
 // hardcoded results for testing population of lists
-function analyseSearches() {
-    populateResultsList('top-searches', ['Result 1', 'Result 2']);
+async function analyseSearches() {
+    const topSearchesResponse = await fetch('../top/playstation');
+    const topSearches = await topSearchesResponse.json();
+    console.log(topSearches);
+    populateResultsList('top-searches', topSearches);
 }
 
 function populateResultsList(listName, results) {
@@ -14,6 +17,7 @@ function populateResultsList(listName, results) {
         // should always be the current (empty) result text
         const span = resultElement.getElementsByTagName('span')[0];
         const resultText = document.createTextNode(result);
+        
         // remove any existing text from the span
         while( span.firstChild ) {
             span.removeChild( span.firstChild );
