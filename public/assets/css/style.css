@@ -106,8 +106,8 @@ make the text more readable with the background image */
 }
 
 #analyse-button:disabled {
-    background-color: rgb(153, 153, 153);
-    color: rgb(99, 99, 99);
+    background-color: rgb(175, 175, 175);
+    color: rgb(156, 156, 156);
 }
 
 /* Results area */
