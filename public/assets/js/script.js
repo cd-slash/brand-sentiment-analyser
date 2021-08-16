@@ -1,7 +1,8 @@
 // hardcoded results for testing population of lists
 async function analyseSearches() {
-    const topSearchesResponse = await fetch('../top/playstation');
-    const topSearches = await topSearchesResponse.json();
+    const seed = document.getElementById("seed-input").value;
+    const topSearches = await fetch(`../top/${seed}`)
+        .then(response => response.json()); // chain instead of await to avoid multiple variables
     console.log(topSearches);
     populateResultsList('top-searches', topSearches);
 }
