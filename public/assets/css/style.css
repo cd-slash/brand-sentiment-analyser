@@ -173,8 +173,7 @@ be taller than the image and would leave an abrupt end at the bottom */
 }
 
 .list-item {
-    /* hide the items initially and change to display: flex later in js */
-    display: none;
+    display: flex;
     justify-content: space-between;
 
     margin: 16px 0;
