@@ -1,4 +1,7 @@
-// hardcoded results for testing population of lists
+function enableAnalysis() {
+    document.getElementById("analyse-button").disabled = false;
+}
+
 function createListItem(itemText) {
 
     let element = document.createElement('li');
@@ -12,8 +15,10 @@ function createListItem(itemText) {
 
 }
 
-// TODO: clicking analyse twice re-runs the analysis and appends the same items
 async function analyseSearches() {
+    // avoid repeat search for the same seed by disabling analyse button 
+    document.getElementById("analyse-button").disabled = true;
+    
     const seed = document.getElementById("seed-input").value;
     const topSearches = await fetch(`../top/${seed}`)
         .then(response => response.json()); // chain instead of await to avoid multiple variables

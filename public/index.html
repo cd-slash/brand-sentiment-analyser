@@ -24,8 +24,8 @@
     </section>
     <section id="input-area">
         <div id="search-seed-container">
-            <input id="seed-input" placeholder="e.g. 'Peloton' (max. 2 words)">
-            <button id="analyse-button" onclick="analyseSearches()">Analyse</button>
+            <input id="seed-input" placeholder="e.g. 'Peloton' (max. 2 words)" oninput="enableAnalysis()">
+            <button id="analyse-button" onclick="analyseSearches();" disabled>Analyse</button>
         </div>
     </section>
     <section id="results-area">
