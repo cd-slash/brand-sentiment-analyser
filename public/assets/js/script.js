@@ -5,11 +5,10 @@ function enableAnalysis() {
 function createListItem(itemText) {
 
     let element = document.createElement('li');
+    element.className = 'list-item'
     element.innerHTML = `
-        <li class="list-item">
             <span>${itemText}</span>
             <i class="fas fa-plus-circle add-to-research"></i>
-        </li>
     `
     return element;
 
