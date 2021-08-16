@@ -105,6 +105,11 @@ make the text more readable with the background image */
     text-transform: uppercase;
 }
 
+#analyse-button:disabled {
+    background-color: rgb(153, 153, 153);
+    color: rgb(99, 99, 99);
+}
+
 /* Results area */
 
 /* use gradient background to fade out main background since results area will
