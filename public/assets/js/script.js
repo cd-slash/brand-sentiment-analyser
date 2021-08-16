@@ -34,7 +34,10 @@ async function analyseSearches() {
 
 function populateResultsList(listName, results) {
     const resultsList = document.getElementById(listName + '-list');
-    
+
+    // clear any existing results
+    resultsList.innerHTML = '';
+
     results.forEach((result) => {
         resultsList.appendChild(createListItem(result));
     });
