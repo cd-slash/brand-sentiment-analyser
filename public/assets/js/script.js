@@ -11,8 +11,8 @@ function populateResultsList(listName, results) {
     
     results.forEach((result, i) => {
         const resultElement = resultsList.children[i];
-        // results box is hidden (display=none) by default
-        resultElement.style.display = "flex";
+        resultElement.style.display = "flex"; // display:none by default
+        
         // getElementsByTagName returns an array, so take the first span since this
         // should always be the current (empty) result text
         const span = resultElement.getElementsByTagName('span')[0];
