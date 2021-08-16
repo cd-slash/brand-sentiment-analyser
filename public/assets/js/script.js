@@ -17,8 +17,19 @@ async function analyseSearches() {
     const seed = document.getElementById("seed-input").value;
     const topSearches = await fetch(`../top/${seed}`)
         .then(response => response.json()); // chain instead of await to avoid multiple variables
-    console.log(topSearches);
+    const questions = await fetch(`../questions/${seed}`)
+        .then(response => response.json());
+    const competitors = await fetch(`../competitors/${seed}`)
+        .then(response => response.json());
+    const concerns = await fetch(`../concerns/${seed}`)
+        .then(response => response.json());
+    // populate each list individually, asynchronously
+    // TODO: handle errors, e.g. empty lists
+    // TODO: parse ASCII tokens (e.g. &#39, for apostrophe)
     populateResultsList('top-searches', topSearches);
+    populateResultsList('questions', questions);
+    populateResultsList('competitors', competitors);
+    populateResultsList('concerns', concerns);
 }
 
 function populateResultsList(listName, results) {
