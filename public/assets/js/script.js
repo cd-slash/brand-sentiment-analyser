@@ -45,6 +45,9 @@ function populateResultsList(listName, results) {
     results.forEach((result) => {
         resultsList.appendChild(createListItem(result));
     });
+
+    // hide the loading animation in the box header
+    document.getElementById(`loading-${listName}`).style.display = 'none';
 }
 
 // time delay function that can be awaited in a loop
