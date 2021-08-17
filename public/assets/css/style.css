@@ -146,16 +146,6 @@ be taller than the image and would leave an abrupt end at the bottom */
     justify-items: center;
 }
 
-/* loading animation, source: https://loading.io/css */
-.lds-ring {
-    box-sizing: border-box;
-    display: block;
-    position: absolute;
-    width: 24px;
-    height: 24px;
-    margin: 3px;
-    border: 3px solid #fff;
-    border-radius: 50%;
 /* Results lists */
 
 .list-box {
@@ -173,7 +163,7 @@ be taller than the image and would leave an abrupt end at the bottom */
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding-bottom: 16px;
+    padding-bottom: 12px;
     border-bottom: 1px solid hsl(0, 0%, 95%);
 }
 
@@ -181,8 +171,13 @@ be taller than the image and would leave an abrupt end at the bottom */
     color: white;
 }
 
+.list-box-header,
 .list-box-header i {
-    font-size: 130%;
+    font-size: 120%;
+}
+
+.list-box-header>div>.fa-spinner {
+    margin-right: 8px;
 }
 
 .list-box-body {
