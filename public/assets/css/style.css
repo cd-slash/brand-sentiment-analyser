@@ -19,7 +19,7 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: bottom;
-    
+
 }
 
 /* the background image is a partially transparent white background to 
@@ -27,7 +27,7 @@ make the text more readable with the background image */
 
 #gradient-container {
     height: 100vh;
-    background-image: linear-gradient(to bottom, rgba(255,255,255,1), rgba(255,255,255,0.2));
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.2));
 }
 
 /* font families */
@@ -38,11 +38,15 @@ make the text more readable with the background image */
     font-weight: 300;
 }
 
-#header-area > h1,  #header-area > h1 > span, #further-research-quantity > span {
+#header-area>h1,
+#header-area>h1>span,
+#further-research-quantity>span {
     font-family: 'Righteous', Arial, Helvetica, sans-serif;
 }
 
-#header-area h2, #results-area-header h2, .list-box-header h3 {
+#header-area h2,
+#results-area-header h2,
+.list-box-header h3 {
     font-family: 'Contrail One', Arial, Helvetica, sans-serif;
 }
 
@@ -57,11 +61,11 @@ make the text more readable with the background image */
     padding: 100px 32px 0px 32px;
 }
 
-#header-area > h1 {
+#header-area>h1 {
     font-size: 64px;
 }
 
-#header-area > h2 {
+#header-area>h2 {
     font-size: 32px;
     margin-top: 32px;
 }
@@ -75,18 +79,20 @@ make the text more readable with the background image */
 
 /* Input area */
 
-#input-area, #results-outer-container, #further-research {
+#input-area,
+#results-outer-container,
+#further-research {
     margin: 32px;
 }
 
 #search-seed-container {
     display: flex;
-
     border: 1px solid hsl(0, 0%, 85%);
     border-radius: 8px;
 }
 
-#seed-input, #analyse-button {
+#seed-input,
+#analyse-button {
     padding: 16px;
 }
 
@@ -116,19 +122,19 @@ make the text more readable with the background image */
 be taller than the image and would leave an abrupt end at the bottom */
 
 #results-area {
-    background-image: linear-gradient(to bottom, rgba(255,255,255,0), rgba(255,255,255,1));
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1));
     background-size: 100% 150px;
     background-repeat: no-repeat;
 }
 
 #results-bg-container {
-    background-image: linear-gradient(to bottom, rgba(255,255,255,1), rgba(255,255,255,1));
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(255, 255, 255, 1));
     background-size: 100% 100%;
     background-repeat: no-repeat;
     background-position-y: 150px;
 }
 
-#results-area-header > h2 {
+#results-area-header>h2 {
     text-align: center;
     margin-bottom: 32px;
 }
@@ -185,7 +191,7 @@ be taller than the image and would leave an abrupt end at the bottom */
     padding: 12px;
     background-color: hsl(0, 0%, 95%);
     border-radius: 4px;
-    color:hsl(0, 0%, 30%)
+    color: hsl(0, 0%, 30%)
 }
 
 .add-to-research {
@@ -196,7 +202,7 @@ be taller than the image and would leave an abrupt end at the bottom */
 /* Remove bottom margin on bottom list item to avoid double 
 width border at the bottom of the list box */
 
-.list-box-body > ul > li:last-child {
+.list-box-body>ul>li:last-child {
     margin-bottom: 0;
 }
 
@@ -213,7 +219,7 @@ width border at the bottom of the list box */
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: rgba(255,255,255,0.2);
+    background-color: rgba(255, 255, 255, 0.2);
 }
 
 /* footer to hold button displaying number of items in further research list */
@@ -231,14 +237,15 @@ width border at the bottom of the list box */
     bottom: 32px;
     right: 32px;
     height: 80px;
-    line-height: 80px; /* set equal to container height to vertically align number in circle */
+    line-height: 80px;
+    /* set equal to container height to vertically align number in circle */
     width: 80px;
     text-align: center;
     border-radius: 50%;
     background-color: black;
 }
 
-#further-research-quantity > span {
+#further-research-quantity>span {
     display: inline-block;
     vertical-align: middle;
     line-height: normal;
@@ -250,16 +257,16 @@ width border at the bottom of the list box */
 /* smaller tablets */
 @media screen and (max-width: 900px) {
 
-    #header-area > h1 {
+    #header-area>h1 {
         font-size: 56px;
     }
 
-    #header-area > h2 {
+    #header-area>h2 {
         font-size: 28px;
         margin-top: 24px;
     }
 
-    #results-area-header > h2 {
+    #results-area-header>h2 {
         margin: 0 24px;
     }
 
@@ -271,16 +278,17 @@ width border at the bottom of the list box */
 
 @media screen and (max-width: 700px) {
 
-    #header-area > h1 {
+    #header-area>h1 {
         font-size: 56px;
     }
 
-    #header-area > h2 {
+    #header-area>h2 {
         font-size: 28px;
         margin-top: 18px;
     }
 
-    #seed-input, #analyse-button {
+    #seed-input,
+    #analyse-button {
         padding: 12px;
     }
 
@@ -297,19 +305,20 @@ width border at the bottom of the list box */
         padding: 100px 24px 0px 24px;
     }
 
-    #input-area, #results-outer-container {
+    #input-area,
+    #results-outer-container {
         margin: 24px;
     }
 
     #results-area {
         gap: 24px;
     }
-    
-    #header-area > h1 {
+
+    #header-area>h1 {
         font-size: 40px;
     }
 
-    #header-area > h2 {
+    #header-area>h2 {
         font-size: 24px;
         margin-top: 12px;
     }
@@ -326,11 +335,11 @@ width border at the bottom of the list box */
 
 @media screen and (max-width: 400px) {
 
-    #header-area > h1 {
+    #header-area>h1 {
         font-size: 24px;
     }
 
-    #header-area > h2 {
+    #header-area>h2 {
         font-size: 18px;
     }
 
