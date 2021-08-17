@@ -21,6 +21,7 @@ async function analyseSearches() {
     // clear lists and show the loading animations in the box headers
     ['top-searches', 'questions', 'competitors', 'concerns'].forEach(x => {
         document.getElementById(`${x}-list`).innerHTML = '';
+        document.getElementById(`loading-${x}`).style.removeProperty('display');
     });
 
     // show the results area
