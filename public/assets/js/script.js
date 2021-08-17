@@ -18,6 +18,11 @@ async function analyseSearches() {
     // avoid repeat search for the same seed by disabling analyse button 
     document.getElementById("analyse-button").disabled = true;
 
+    // clear lists and show the loading animations in the box headers
+    ['top-searches', 'questions', 'competitors', 'concerns'].forEach(x => {
+        document.getElementById(`${x}-list`).innerHTML = '';
+    });
+
     // show the results area
     document.getElementById("results-area").style.height = "auto";
 
@@ -41,9 +46,6 @@ async function analyseSearches() {
 
 function populateResultsList(listName, results) {
     const resultsList = document.getElementById(listName + '-list');
-
-    // clear any existing results
-    resultsList.innerHTML = '';
 
     results.forEach((result) => {
         resultsList.appendChild(createListItem(result));
