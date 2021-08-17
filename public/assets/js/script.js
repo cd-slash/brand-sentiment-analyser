@@ -18,6 +18,9 @@ async function analyseSearches() {
     // avoid repeat search for the same seed by disabling analyse button 
     document.getElementById("analyse-button").disabled = true;
 
+    // show the results area
+    document.getElementById("results-area").style.height = "auto";
+
     const seed = document.getElementById("seed-input").value;
     const topSearches = await fetch(`../top/${seed}`)
         .then(response => response.json()); // chain instead of await to avoid multiple variables
