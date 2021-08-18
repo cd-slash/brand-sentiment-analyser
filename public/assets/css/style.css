@@ -340,7 +340,7 @@ width border at the bottom of the list box */
 
     #input-area,
     #results-outer-container {
-        margin: 24px;
+        margin: 0 24px 24px 24px;
     }
 
     #results-area {
