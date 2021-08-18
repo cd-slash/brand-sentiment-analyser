@@ -28,7 +28,7 @@ async function analyseSearches() {
     });
 
     // show the results area
-    document.getElementById("results-area").style.maxHeight = "1000px";
+    document.getElementById("results-area").style.maxHeight = "3000px";
 
     const seed = document.getElementById("seed-input").value;
     const topSearches = await fetch(`../top/${seed}`)
