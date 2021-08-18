@@ -39,8 +39,7 @@ make the text more readable with the background image */
 }
 
 #header-area>h1,
-#header-area>h1>span,
-#further-research-quantity>span {
+#header-area>h1>span {
     font-family: 'Righteous', Arial, Helvetica, sans-serif;
 }
 
