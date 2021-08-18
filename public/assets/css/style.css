@@ -148,8 +148,16 @@ be taller than the image and would leave an abrupt end at the bottom */
 #results-container, #further-research-body {
     display: grid;
     grid-gap: 32px;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     justify-items: center;
+}
+
+#further-research-body {
+    grid-row-gap: 0;
+    grid-column-gap: 16px;
+}
+
+#results-container {
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
 }
 
 /* Results lists */
@@ -213,7 +221,7 @@ be taller than the image and would leave an abrupt end at the bottom */
     white-space: nowrap;
 }
 
-.add-to-research {
+.add-to-research, .external-search {
     color: green;
     font-size: 20px;
 }
@@ -235,6 +243,13 @@ width border at the bottom of the list box */
     background-color: grey;
 }
 
+#further-research-body {
+    grid-template-columns: repeat(auto-fit, minmax(288px, 1fr));
+}
+
+#further-research-body>ul {
+    width: 100%;
+}
 
 /* media queries for responsiveness */
 /* smaller tablets */
