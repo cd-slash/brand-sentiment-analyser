@@ -202,6 +202,14 @@ be taller than the image and would leave an abrupt end at the bottom */
     color: hsl(0, 0%, 30%)
 }
 
+.list-item>span {
+    /* Don't let text wrap - truncate to 1 line
+    Derived from https://css-tricks.com/almanac/properties/l/line-clamp */
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
 .add-to-research {
     color: green;
     font-size: 20px;
