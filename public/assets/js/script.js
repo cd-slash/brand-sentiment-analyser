@@ -114,6 +114,14 @@ function addToResearch(e) {
     const itemID = e.parentNode.id;
     // true means deep clone the list item - i.e. get the elements within it too
     newNode = document.getElementById(itemID).cloneNode(true);
+    // get the icon element in the list item
+    iconNode = newNode.getElementsByTagName("i")[0]
+    // remove the add to research button
+    iconNode.classList.remove("fa-plus-circle");
+    iconNode.classList.remove("add-to-research");
+    // add an open in new tab button
+    iconNode.classList.add("fa-external-link-alt");
+    // append the item to the research list
     targetList = document.getElementById("further-research-list");
     targetList.appendChild(newNode);
 }
