@@ -27,7 +27,9 @@ async function analyseSearches() {
         document.getElementById(`loading-${x}`).style.removeProperty('display');
     });
 
-    // show the results area
+    // show the results area - max-height is used to allow an animated transition
+    // maxHeight can be any value greater than the largest possible area as the
+    // area will shrink to the size of its contents
     document.getElementById("results-area").style.maxHeight = "3000px";
 
     const seed = document.getElementById("seed-input").value;
