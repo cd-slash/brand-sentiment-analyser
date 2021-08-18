@@ -5,10 +5,13 @@ function enableAnalysis() {
 function createListItem(itemText) {
 
     let element = document.createElement('li');
+    // Give the item a unique ID - source: https://gist.github.com/gordonbrander/2230317
+    const id = Math.random().toString(36).substr(2, 9);
+    element.id = id;
     element.className = 'list-item'
     element.innerHTML = `
-            <span>${itemText}</span>
-            <i class="fas fa-plus-circle add-to-research"></i>
+        <span>${itemText}</span>
+        <i class="fas fa-plus-circle add-to-research" onclick="addToResearch(this);"></i>
     `
     return element;
 
@@ -105,4 +108,12 @@ function alternateBrandSuggestions() {
         'your brand'
     ]
     typewriterText('title-search-seed', brands, 50);
+}
+
+function addToResearch(e) {
+    const itemID = e.parentNode.id;
+    // true means deep clone the list item - i.e. get the elements within it too
+    newNode = document.getElementById(itemID).cloneNode(true);
+    targetList = document.getElementById("further-research-list");
+    targetList.appendChild(newNode);
 }
