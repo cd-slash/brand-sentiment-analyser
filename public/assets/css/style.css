@@ -129,8 +129,9 @@ be taller than the image and would leave an abrupt end at the bottom */
     background-size: 100% 150px;
     background-repeat: no-repeat;
 
-    height: 0;
+    max-height: 0;
     overflow: hidden;
+    transition: max-height 0.5s ease-in;
 }
 
 #results-bg-container {
