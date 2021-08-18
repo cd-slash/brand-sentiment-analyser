@@ -219,6 +219,18 @@ be taller than the image and would leave an abrupt end at the bottom */
     font-size: 20px;
 }
 
+#instruction-container {
+    text-align: center;
+}
+
+#instruction-item {
+    display: inline-block;
+    margin-top: 0;
+    margin-bottom: 32px;
+    padding-right: 16px;
+    padding-left: 16px;
+    text-align: center;
+}
 
 /* Remove bottom margin on bottom list item to avoid double 
 width border at the bottom of the list box */
