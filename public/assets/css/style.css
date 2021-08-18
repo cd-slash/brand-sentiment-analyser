@@ -146,7 +146,7 @@ be taller than the image and would leave an abrupt end at the bottom */
     margin-bottom: 32px;
 }
 
-#results-container {
+#results-container, #further-research-body {
     display: grid;
     grid-gap: 32px;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -219,19 +219,6 @@ be taller than the image and would leave an abrupt end at the bottom */
     font-size: 20px;
 }
 
-#instruction-container {
-    text-align: center;
-}
-
-#instruction-item {
-    display: inline-block;
-    margin-top: 0;
-    margin-bottom: 32px;
-    padding-right: 16px;
-    padding-left: 16px;
-    text-align: center;
-}
-
 /* Remove bottom margin on bottom list item to avoid double 
 width border at the bottom of the list box */
 
@@ -244,47 +231,11 @@ width border at the bottom of the list box */
 /* code derived from https://www.w3schools.com/howto/howto_css_overlay.asp */
 
 #further-research {
-    position: fixed;
-    display: none;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: rgba(255, 255, 255, 0.2);
+    margin: 32px 0 0 0;
+    border-radius: 8px;
+    background-color: grey;
 }
 
-/* footer to hold button displaying number of items in further research list */
-
-#footer {
-    height: 120px;
-    width: 100%;
-    z-index: 2;
-    position: fixed;
-    bottom: 0;
-}
-
-#further-research-quantity {
-    position: absolute;
-    bottom: 32px;
-    right: 32px;
-    height: 80px;
-    line-height: 80px;
-    /* set equal to container height to vertically align number in circle */
-    width: 80px;
-    text-align: center;
-    border-radius: 50%;
-    background-color: black;
-}
-
-#further-research-quantity>span {
-    display: inline-block;
-    vertical-align: middle;
-    line-height: normal;
-    color: white;
-    font-size: 56px;
-}
 
 /* media queries for responsiveness */
 /* smaller tablets */
