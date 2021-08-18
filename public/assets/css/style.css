@@ -79,7 +79,8 @@ make the text more readable with the background image */
 /* Input area */
 
 #input-area,
-#further-research {
+#further-research,
+#footer {
     margin: 32px;
 }
 
