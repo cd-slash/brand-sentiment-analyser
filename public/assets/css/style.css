@@ -80,9 +80,12 @@ make the text more readable with the background image */
 /* Input area */
 
 #input-area,
-#results-outer-container,
 #further-research {
     margin: 32px;
+}
+
+#results-outer-container {
+    margin: 0 32px 32px 32px;
 }
 
 #search-seed-container {
