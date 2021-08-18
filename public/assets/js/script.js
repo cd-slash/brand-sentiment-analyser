@@ -18,7 +18,7 @@ async function analyseSearches() {
     // avoid repeat search for the same seed by disabling analyse button 
     document.getElementById("analyse-button").disabled = true;
 
-    // clear lists and show the loading animations in the box headers
+    // clear lists 
     ['top-searches', 'questions', 'competitors', 'concerns'].forEach(x => {
         document.getElementById(`${x}-list`).innerHTML = '';
         document.getElementById(`loading-${x}`).style.removeProperty('display');
