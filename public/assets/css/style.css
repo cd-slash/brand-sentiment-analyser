@@ -231,6 +231,9 @@ be taller than the image and would leave an abrupt end at the bottom */
 #further-research .add-to-research {
     cursor: auto;
 }
+
+#further-research .list-item {
+    max-width: 360px;
 }
 
 /* Remove bottom margin on bottom list item to avoid double 
