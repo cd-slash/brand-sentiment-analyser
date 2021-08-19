@@ -261,6 +261,15 @@ width border at the bottom of the list box */
     width: 100%;
 }
 
+#further-research-instruction-item .list-item {
+    background-color: hsl(0, 0%, 85%);
+    color: hsl(0, 0%, 45%);
+}
+
+#further-research-instruction-item .add-to-research {
+    color: hsl(0, 0%, 45%);
+}
+
 /* media queries for responsiveness */
 /* smaller tablets */
 @media screen and (max-width: 900px) {
