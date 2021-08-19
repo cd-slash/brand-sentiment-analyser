@@ -36,7 +36,7 @@ body {
     font-family: 'Righteous', Arial, Helvetica, sans-serif;
 }
 
-#header-area h2,
+#input-area h2,
 #results-area-header h2,
 .list-box-header h3 {
     font-family: 'Contrail One', Arial, Helvetica, sans-serif;
@@ -57,9 +57,10 @@ body {
     font-size: 64px;
 }
 
-#header-area>h2 {
+#input-area>h2 {
     font-size: 32px;
     margin-top: 32px;
+    margin-bottom: 32px;
 }
 
 #title-search-seed {
@@ -321,9 +322,10 @@ derived from: http://www.menucool.com/tooltip/css-tooltip */
         font-size: 56px;
     }
 
-    #header-area>h2 {
+    #input-area>h2 {
         font-size: 28px;
         margin-top: 24px;
+        margin-bottom: 24px;
     }
 
     #results-area-header>h2 {
@@ -342,9 +344,10 @@ derived from: http://www.menucool.com/tooltip/css-tooltip */
         font-size: 56px;
     }
 
-    #header-area>h2 {
+    #input-area>h2 {
         font-size: 28px;
         margin-top: 18px;
+        margin-bottom: 18px;
     }
 
     #seed-input,
@@ -381,9 +384,10 @@ derived from: http://www.menucool.com/tooltip/css-tooltip */
         font-size: 40px;
     }
 
-    #header-area>h2 {
+    #input-area>h2 {
         font-size: 24px;
         margin-top: 12px;
+        margin-bottom: 12px;
     }
 
     #title-search-seed {
@@ -402,7 +406,7 @@ derived from: http://www.menucool.com/tooltip/css-tooltip */
         font-size: 24px;
     }
 
-    #header-area>h2 {
+    #input-area>h2 {
         font-size: 18px;
     }
 
