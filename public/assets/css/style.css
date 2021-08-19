@@ -233,7 +233,7 @@ be taller than the image and would leave an abrupt end at the bottom */
 }
 
 #further-research .list-item {
-    max-width: 360px;
+    max-width: 400px;
 }
 
 /* Remove bottom margin on bottom list item to avoid double 
@@ -322,7 +322,10 @@ width border at the bottom of the list box */
         padding: 100px 24px 0px 24px;
     }
 
-    #input-area,
+    #input-area {
+        margin: 16px 24px;
+    }
+
     #results-outer-container {
         margin: 0 24px 24px 24px;
     }
