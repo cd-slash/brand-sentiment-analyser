@@ -31,7 +31,6 @@ async function analyseSearches() {
     // maxHeight can be any value greater than the largest possible area as the
     // area will shrink to the size of its contents
     document.getElementById("results-area").style.maxHeight = "3000px";
-    document.getElementById("footer").classList.add("gradient");
 
     const seed = document.getElementById("seed-input").value;
     const topSearches = await fetch(`../top/${seed}`)
