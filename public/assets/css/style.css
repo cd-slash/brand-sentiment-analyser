@@ -155,10 +155,17 @@ be taller than the image and would leave an abrupt end at the bottom */
 #further-research-body {
     grid-row-gap: 0;
     grid-column-gap: 16px;
+    max-height: 0;
 }
 
 #results-container {
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
+
+.expand-toggle {
+    cursor: pointer;
+}
+
 }
 
 /* Results lists */

@@ -143,3 +143,16 @@ function addToResearch(e) {
     targetList.insertBefore(newItem, document.getElementById("further-research-instruction-item"));
 
 }
+
+function toggleList(toggle, listName) {
+    // only the body section is expanded or collapsed
+    let listBody = document.getElementById(`${listName}-body`);
+    if (toggle.classList.contains('expanded')) {
+        listBody.style.maxHeight = "0"; // must be larger than max. possible height of list
+        toggle.classList.remove('expanded');
+    }
+    else {
+        listBody.style.maxHeight = "1000px"; // must be larger than max. possible height of list
+        toggle.classList.add('expanded');
+    }
+}
