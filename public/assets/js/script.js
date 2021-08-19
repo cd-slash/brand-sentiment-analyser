@@ -116,9 +116,9 @@ function addToResearch(e) {
     const itemID = e.parentNode.id;
     let newItem = document.createElement('ul');
     // true means deep clone the list item - i.e. get the elements within it too
-    newNode = document.getElementById(itemID).cloneNode(true);
+    let newNode = document.getElementById(itemID).cloneNode(true);
     // get the icon element in the list item
-    iconNode = newNode.getElementsByTagName("i")[0]
+    let iconNode = newNode.getElementsByTagName("i")[0]
     // remove the add to research button
     iconNode.classList.remove("fa-plus-circle");
     iconNode.classList.remove("add-to-research");
@@ -127,7 +127,7 @@ function addToResearch(e) {
     iconNode.classList.add("fa-external-link-alt");
     iconNode.classList.add("external-search");
     // create a link element to wrap the open in new tab icon
-    linkNode = document.createElement('a');
+    let linkNode = document.createElement('a');
     linkNode.setAttribute("target", "_blank");
     linkNode.setAttribute("href",
         `https://google.com/search?q=${newNode.getElementsByTagName("span")[0].textContent}`
@@ -139,7 +139,7 @@ function addToResearch(e) {
     document.getElementById(itemID).remove();
     // append the item to the research list as the last item before the instruction item
     newItem.appendChild(newNode);
-    targetList = document.getElementById("further-research-body");
+    let targetList = document.getElementById("further-research-body");
     targetList.insertBefore(newItem, document.getElementById("further-research-instruction-item"));
 
 }
