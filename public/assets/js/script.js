@@ -130,6 +130,6 @@ function addToResearch(e) {
     // append the item to the research list as the last item before the instruction item
     newItem.appendChild(newNode);
     targetList = document.getElementById("further-research-body");
-    targetList.insertBefore(newItem, document.getElementById("fr-instruction-item"));
+    targetList.insertBefore(newItem, document.getElementById("further-research-instruction-item"));
 
 }
