@@ -164,8 +164,11 @@ be taller than the image and would leave an abrupt end at the bottom */
 
 .expand-toggle {
     cursor: pointer;
+    transition: transform 0.25s ease-in;
 }
 
+.expand-toggle.expanded {
+    transform: rotate(180deg);
 }
 
 /* Results lists */
@@ -204,6 +207,7 @@ be taller than the image and would leave an abrupt end at the bottom */
 
 .list-box-body {
     overflow: hidden;
+    transition: max-height 0.5s ease-in-out;
 }
 
 .list-box-body ul {
