@@ -114,7 +114,7 @@ function alternateBrandSuggestions() {
 
 function addToResearch(e) {
     const itemID = e.parentNode.id;
-    let newList = document.createElement('ul');
+    let newItem = document.createElement('ul');
     // true means deep clone the list item - i.e. get the elements within it too
     newNode = document.getElementById(itemID).cloneNode(true);
     // get the icon element in the list item
@@ -127,8 +127,9 @@ function addToResearch(e) {
     iconNode.classList.add("external-search");
     // remove item from origin list
     document.getElementById(itemID).remove();
-    // append the item to the research list
-    newList.appendChild(newNode);
+    // append the item to the research list as the last item before the instruction item
+    newItem.appendChild(newNode);
     targetList = document.getElementById("further-research-body");
-    targetList.appendChild(newList);
+    targetList.insertBefore(newItem, document.getElementById("fr-instruction-item"));
+
 }
