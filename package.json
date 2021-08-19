@@ -6,6 +6,9 @@
     "start": "npx sandbox"
   },
   "devDependencies": {
-    "@architect/sandbox": "^3.3"
+    "@architect/sandbox": "^3.7.4"
+  },
+  "dependencies": {
+    "node-fetch": "^2.6.1"
   }
 }
