@@ -122,9 +122,19 @@ function addToResearch(e) {
     // remove the add to research button
     iconNode.classList.remove("fa-plus-circle");
     iconNode.classList.remove("add-to-research");
-    // add an open in new tab button
+    iconNode.removeAttribute("onclick");
+    // add an open in new tab icon
     iconNode.classList.add("fa-external-link-alt");
     iconNode.classList.add("external-search");
+    // create a link element to wrap the open in new tab icon
+    linkNode = document.createElement('a');
+    linkNode.setAttribute("target", "_blank");
+    linkNode.setAttribute("href",
+        `https://google.com/search?q=${newNode.getElementsByTagName("span")[0].textContent}`
+    );
+    // wrap the link icon in the new link element
+    linkNode.appendChild(iconNode);
+    newNode.appendChild(linkNode);
     // remove item from origin list
     document.getElementById(itemID).remove();
     // append the item to the research list as the last item before the instruction item
