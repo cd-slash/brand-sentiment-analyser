@@ -273,6 +273,60 @@ width border at the bottom of the list box */
     color: hsl(0, 0%, 45%);
 }
 
+/* results box help tooltips
+derived from: http://www.menucool.com/tooltip/css-tooltip */
+
+.tooltip {
+    display:inline-block;
+    position:relative;
+    border-bottom:1px dotted #666;
+    text-align:left;
+}
+
+.tooltip .left {
+    min-width:200px; 
+    top:80%;
+    right:100%;
+    margin-right:20px;
+    transform:translate(0, -50%);
+    padding:10px 20px;
+    color:white;
+    background-color:grey;
+    font-weight:normal;
+    font-size:13px;
+    border-radius:8px;
+    position:absolute;
+    z-index:999; /* always show above other elements */
+    box-sizing:border-box;
+    visibility:hidden; opacity:0; transition:opacity 0.8s;
+}
+
+/* use :hover for desktop and :active for mobile/touch */
+.tooltip:hover .left, .tooltip:active .left {
+    visibility:visible; opacity:1;
+}
+
+.tooltip .left i {
+    position:absolute;
+    top:44%;
+    left:100%;
+    margin-top:-12px;
+    width:12px;
+    height:24px;
+    overflow:hidden;
+}
+
+.tooltip .left i::after {
+    content:'';
+    position:absolute;
+    width:12px;
+    height:12px;
+    left:0;
+    top:38%;
+    transform:translate(-50%,-50%) rotate(-45deg);
+    background-color:#888888;
+}
+
 /* media queries for responsiveness */
 /* smaller tablets */
 @media screen and (max-width: 900px) {
