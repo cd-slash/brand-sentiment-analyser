@@ -125,6 +125,8 @@ function addToResearch(e) {
     // add an open in new tab button
     iconNode.classList.add("fa-external-link-alt");
     iconNode.classList.add("external-search");
+    // remove item from origin list
+    document.getElementById(itemID).remove();
     // append the item to the research list
     newList.appendChild(newNode);
     targetList = document.getElementById("further-research-body");
