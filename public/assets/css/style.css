@@ -15,8 +15,8 @@
 
 body {
     height: 100vh;
-    background-image: url('../images/seth-weisfeld-IuXt3YN-BDs-unsplash.jpg');
-    background-size: cover;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1)), url('../images/seth-weisfeld-IuXt3YN-BDs-unsplash.jpg');
+    background-size: 100% 100px, cover;
     background-repeat: no-repeat;
     background-position: bottom;
 
@@ -79,8 +79,7 @@ make the text more readable with the background image */
 /* Input area */
 
 #input-area,
-#further-research,
-#footer {
+#further-research {
     margin: 32px;
 }
 
@@ -126,19 +125,12 @@ be taller than the image and would leave an abrupt end at the bottom */
 
 #results-area {
     background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1));
-    background-size: 100% 320px;
+    background-size: 100% 100%;
     background-repeat: no-repeat;
 
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.5s ease-in;
-}
-
-#results-bg-container {
-    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(255, 255, 255, 1));
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    background-position-y: 300px;
 }
 
 #results-area-header>h2 {
@@ -374,4 +366,18 @@ width border at the bottom of the list box */
         font-size: 18px;
     }
 
+}
+
+/* Put a gradient in the footer if the background image is taller than the page content */
+@media screen and (min-aspect-ratio: 1330/997) {
+    
+    #footer-placeholder {
+        height: 50px;
+    }
+    
+    #footer.gradient {
+        background-image: linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.0));
+        background-size: 100% 50px;
+        background-repeat: no-repeat;
+    }
 }
