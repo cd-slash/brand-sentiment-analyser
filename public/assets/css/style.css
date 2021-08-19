@@ -126,7 +126,7 @@ be taller than the image and would leave an abrupt end at the bottom */
 
 #results-area {
     background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1));
-    background-size: 100% 150px;
+    background-size: 100% 320px;
     background-repeat: no-repeat;
 
     max-height: 0;
@@ -138,7 +138,7 @@ be taller than the image and would leave an abrupt end at the bottom */
     background-image: linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(255, 255, 255, 1));
     background-size: 100% 100%;
     background-repeat: no-repeat;
-    background-position-y: 150px;
+    background-position-y: 300px;
 }
 
 #results-area-header>h2 {
@@ -327,7 +327,7 @@ width border at the bottom of the list box */
     }
 
     #results-outer-container {
-        margin: 0 24px 24px 24px;
+        margin: 16px 24px 24px 24px;
     }
 
     #results-area {
