@@ -16,7 +16,7 @@
 background to make the text more readable */
 body {
     height: 100vh;
-    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.2)), url('../images/seth-weisfeld-IuXt3YN-BDs-unsplash.jpg');
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.4)), url('../images/seth-weisfeld-IuXt3YN-BDs-unsplash.jpg');
     background-size: cover, cover;
     background-repeat: no-repeat;
     background-position: bottom;
