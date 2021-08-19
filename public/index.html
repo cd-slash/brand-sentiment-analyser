@@ -15,108 +15,123 @@
 </head>
 <body onload="alternateBrandSuggestions()">
     <div id="gradient-container">
-    <section id="header-area">
-        <h1>What are people asking<br>about
-            <span id="title-search-seed"></span>?
-        </h1>
-        <h2>Enter a search seed to find out.</h2>
-    </section>
-    <section id="input-area">
-        <div id="search-seed-container">
-            <input id="seed-input" placeholder="e.g. 'Peloton' (max. 2 words)" oninput="enableAnalysis()">
-            <button id="analyse-button" onclick="analyseSearches();" disabled>Analyse</button>
-        </div>
-    </section>
-    <section id="results-area">
-        <div id="results-outer-container">
-            <div id="results-container">
-                <div class="list-box">
-                    <div class="list-box-header">
-                        <h3>Top searches</h3>
-                        <div>
-                            <i id="loading-top-searches" class="fas fa-spinner fa-pulse"></i>
-                            <i class="fas fa-question-circle tooltip">
-                                <div class="left">
-                                    <p>The top search terms suggested for your selected brand</p>
-                                    <i></i>
-                                </div>
-                            </i>
+        <section id="header-area">
+            <h1>What are people asking<br>about
+                <span id="title-search-seed"></span>?
+            </h1>
+            <h2>Enter a search seed to find out.</h2>
+        </section>
+        <section id="input-area">
+            <div id="search-seed-container">
+                <input id="seed-input" placeholder="e.g. 'Peloton' (max. 2 words)" oninput="enableAnalysis()">
+                <button id="analyse-button" onclick="analyseSearches();" disabled>Analyse</button>
+            </div>
+        </section>
+        <section id="results-area">
+            <div id="results-outer-container">
+                <div id="results-container">
+                    <div class="list-box">
+                        <div class="list-box-header">
+                            <h3>Top searches</h3>
+                            <div>
+                                <i id="loading-top-searches" class="fas fa-spinner fa-pulse"></i>
+                                <i class="fas fa-question-circle tooltip">
+                                    <div class="left">
+                                        <p>The top search terms suggested for your selected brand</p>
+                                        <i></i>
+                                    </div>
+                                </i>
+                            </div>
+                        </div>
+                        <div class="list-box-body">
+                            <ul id="top-searches-list">
+                            </ul>
                         </div>
                     </div>
-                    <div class="list-box-body">
-                        <ul id="top-searches-list">
-                        </ul>
+                    <div class="list-box">
+                        <div class="list-box-header">
+                            <h3>Questions</h3>
+                            <div>
+                                <i id="loading-questions" class="fas fa-spinner fa-pulse"></i>
+                                <i class="fas fa-question-circle tooltip">
+                                    <div class="left">
+                                        <p>Search suggestions including the words "what" or "which"</p>
+                                        <i></i>
+                                    </div>
+                                </i>
+                            </div>
+                        </div>
+                        <div class="list-box-body">
+                            <ul id="questions-list">
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="list-box">
+                        <div class="list-box-header">
+                            <h3>Competitors</h3>
+                            <div>
+                                <i id="loading-competitors" class="fas fa-spinner fa-pulse"></i>
+                                <i class="fas fa-question-circle tooltip">
+                                    <div class="left">
+                                        <p>Potential competitor brands that people may search for</p>
+                                        <i></i>
+                                    </div>
+                                </i>
+                            </div>
+                        </div>
+                        <div class="list-box-body">
+                            <ul id="competitors-list">
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="list-box">
+                        <div class="list-box-header">
+                            <h3>Concerns</h3>
+                            <div>
+                                <i id="loading-concerns" class="fas fa-spinner fa-pulse"></i>
+                                <i class="fas fa-question-circle tooltip">
+                                    <div class="left">
+                                        <p>Suggested search terms including the words "bad" or "help"</p>
+                                        <i></i>
+                                    </div>
+                                </i>
+                            </div>
+                        </div>
+                        <div class="list-box-body">
+                            <ul id="concerns-list">
+                            </ul>
+                        </div>
                     </div>
                 </div>
-                <div class="list-box">
-                    <div class="list-box-header">
-                        <h3>Questions</h3>
-                        <div>
-                            <i id="loading-questions" class="fas fa-spinner fa-pulse"></i>
-                            <i class="fas fa-question-circle"></i>
-                        </div>
-                    </div>
-                    <div class="list-box-body">
-                        <ul id="questions-list">
-                        </ul>
-                    </div>
-                </div>
-                <div class="list-box">
-                    <div class="list-box-header">
-                        <h3>Competitors</h3>
-                        <div>
-                            <i id="loading-competitors" class="fas fa-spinner fa-pulse"></i>
-                            <i class="fas fa-question-circle"></i>
-                        </div>
-                    </div>
-                    <div class="list-box-body">
-                        <ul id="competitors-list">
-                        </ul>
-                    </div>
-                </div>
-                <div class="list-box">
-                    <div class="list-box-header">
-                        <h3>Concerns</h3>
-                        <div>
-                            <i id="loading-concerns" class="fas fa-spinner fa-pulse"></i>
-                            <i class="fas fa-question-circle"></i>
-                        </div>
-                    </div>
-                    <div class="list-box-body">
-                        <ul id="concerns-list">
-                        </ul>
-                    </div>
+            <div id="further-research" class="list-box">
+            <div class="list-box-header">
+                <h3>Further research</h3>
+                <div>
+                    <i class="fas fa-chevron-circle-down expand-toggle" onclick="toggleList(this, 'further-research');"></i>
                 </div>
             </div>
-        <div id="further-research" class="list-box">
-        <div class="list-box-header">
-            <h3>Further research</h3>
-            <div>
-                <i class="fas fa-chevron-circle-down expand-toggle" onclick="toggleList(this, 'further-research');"></i>
+            <div id="further-research-body" class="list-box-body">
+                <ul id="further-research-instruction-item">
+                    <li class="list-item">
+                        <span>Click <i class="fas fa-plus-circle add-to-research"></i> to add item</span>
+                        <i></i>
+                    </li>
+                </ul>
+                <!-- Placeholders so grid fills from left -->
+                <ul></ul>
+                <ul></ul>
+                <ul></ul>
+                <ul></ul>
+                <ul></ul>
+                
+            </div> 
+                </div>
             </div>
-        </div>
-        <div id="further-research-body" class="list-box-body">
-            <ul id="further-research-instruction-item">
-                <li class="list-item">
-                    <span>Click <i class="fas fa-plus-circle add-to-research"></i> to add item</span>
-                    <i></i>
-                </li>
-            </ul>
-            <!-- Placeholders so grid fills from left -->
-            <ul></ul>
-            <ul></ul>
-            <ul></ul>
-            <ul></ul>
-            <ul></ul>
-            
-        </div> 
-            </div>
-        </div>
-    </section>
-    <section id="footer">
-        <div id="footer-placeholder"></div>
-    </section>
-</div>
+        </section>
+        <section id="footer">
+            <div id="footer-placeholder"></div>
+        </section>
+    </div>
     <script src="assets/js/script.js"></script>
 </body>
 </html>
