@@ -156,3 +156,16 @@ function toggleList(toggle, listName) {
         toggle.classList.add('expanded');
     }
 }
+
+// Run analysis enter is pressed (rather than clicking "Analyse")
+// Derived from https://www.w3schools.com/howto/howto_js_trigger_button_enter.asp
+// with modifications for deprecated properties
+var input = document.getElementById("seed-input"); // search seed box
+input.addEventListener("keyup", function (event) {
+    if (event.key === "Enter") {
+      // Cancel the default action for the "Enter" key
+      event.preventDefault();
+      // Trigger the button element with a click
+      document.getElementById("analyse-button").click();
+    }
+  }); 
