@@ -160,6 +160,19 @@ BSA is heavily influenced by Answer The Public, and while similar, it is not int
     - [x] Reduces in size on smaller screens
     - [x] Does not wrap to second line on any tested screen size
 
+- __Reveal results area__
+
+    - [x] Smoothly expands to reveal results boxes when "Analyse" is clicked
+    - [x] Removes and adds letters individually when changing between suggestions
+    - [x] Pauses for 3s after each brand suggestion is shown
+    - [x] Pauses for 6s on "your brand" suggestion
+
+- __Results loading animation__
+
+    - [x] Shown in the header of each results list when "Analyse" is clicked
+    - [x] Remains visible while the API call is in progress
+    - [x] Hidden when the API call completes (whether there are results to show or not)
+    - [x] Animated (shows rotating circle of dots) on all platforms tested
 
 ### Results
 
