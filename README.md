@@ -136,6 +136,20 @@ BSA is heavily influenced by Answer The Public, and while similar, it is not int
     - [x] Rotates to become a "collapse" button when list is expanded
     - [x] Collapses the further research box on click (when expanded)
     - [x] Formatted as intended on all screen sizes
+
+### Animations
+
+- __Search seed suggestions__
+
+    - [x] Shows suggested brands in sequence
+    - [x] Removes and adds letters individually when changing between suggestions
+    - [x] Pauses for 3s after each brand suggestion is shown
+    - [x] Pauses for 6s on "your brand" suggestion
+    - [x] Runs continuously on an infinite loop
+    - [x] Runs asynchronously and does not block UI
+    - [x] Reduces in size on smaller screens
+    - [x] Does not wrap to second line on any tested screen size
+
     - Is initially disabled
 
 ### Responsiveness
