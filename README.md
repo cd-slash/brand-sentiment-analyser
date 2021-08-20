@@ -138,7 +138,6 @@ BSA is heavily influenced by Answer The Public, and while similar, it is not int
     - [x] Hide the tooltip when not hovered or active
     - [x] Formatted as intended on all screen sizes
 
-- __Expand further research list button__
 - __Expand / collapse further research list button__
 
     - [x] Shown in header of further research box
@@ -173,6 +172,11 @@ BSA is heavily influenced by Answer The Public, and while similar, it is not int
     - [x] Remains visible while the API call is in progress
     - [x] Hidden when the API call completes (whether there are results to show or not)
     - [x] Animated (shows rotating circle of dots) on all platforms tested
+
+- __Expand / collapse further research list__
+
+    - [x] List box smoothly expands to reveal list items when chevron icon is clicked
+    - [x] Chevron icon rotates smoothly through 180 degrees when list is expanded or collapsed
 
 ### Results
 
