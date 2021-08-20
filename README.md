@@ -98,28 +98,41 @@ BSA is heavily influenced by Answer The Public, and while similar, it is not int
 
 - __Analyse button__
 
-    - [x] Is initially disabled
-    - [x] Is enabled when text is entered into the search seed input
+    - [x] Initially disabled
+    - [x] Enabled when text is entered into the search seed input
     - [x] Runs the analysis when clicked, or when Enter is pressed while the search seed input has focus
-    - [x] Is re-disabled when the analysis is run (prevents duplicate query)
-    - [x] Is re-enabled when the search seed input text is changed by the user
-    - [x] Is greyed out while disabled
-    - [x] Is highlighted and clickable while enabled
+    - [x] Re-disabled when the analysis is run (prevents duplicate query)
+    - [x] Re-enabled when the search seed input text is changed by the user
+    - [x] Greyed out while disabled
+    - [x] Highlighted and clickable while enabled
+    - [x] Formatted as intended on all screen sizes
 
-- __Add to further research__
 - __Add to further research buttons__
 
-    - [x] Is shown beside each list item in results lists
-    - [x] Is positioned and formatted as intended
+    - [x] Shown beside each list item in results lists
+    - [x] Positioned and formatted as intended
     - [x] Shows a pointer cursor on hover
     - [x] Moves the item to the further research list when clicked
-    - [x] Is not shown beside items in the further research list
+    - [x] Not shown beside items in the further research list
 
 - __External search buttons__
 
-    - [x] Is shown beside each list item in further research list
+    - [x] Shown beside each list item in further research list
     - [x] Opens a Google search for the item in a new tab
-    - [x] Is formatted as intended
+    - [x] Formatted as intended on all screen sizes
+
+- __Help buttons__
+
+    - [x] Shown in the header of each results list
+    - [x] Show a tooltip text box describing the purpose of the results list on hover (desktop) or when active (i.e. touched - mobile / touchscreen)
+    - [x] Hide the tooltip when not hovered or active
+    - [x] Formatted as intended on all screen sizes
+
+- __Expand further research list button__
+
+    - [x] Shown beside each list item in further research list
+    - [x] Opens a Google search for the item in a new tab
+    - [x] Formatted as intended on all screen sizes
     - Is initially disabled
 
 ### Responsiveness
