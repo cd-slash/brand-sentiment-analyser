@@ -165,6 +165,10 @@ I have tested cross-browser support by viewing the site in Firefox, Chrome and S
 
   - Lorem ipsum
 
+- __Concerns list can include apparently positive suggestions__
+
+    - Is initially disabled
+
 ## Deployment
 
 - The site is deployed with AWS Lambda serverless functions, via Begin.com
