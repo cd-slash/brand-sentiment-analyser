@@ -312,6 +312,14 @@ I have tested cross-browser support by viewing the site in Firefox, Chrome and S
     - The concept of asynchronous JS is simple, but it took quite a while to get a handle on the various ways to implement it (including Promises), as is visible in the git history, though the ES6 async / await syntax seems to have simplified this significantly.
     - While I have used async / await in most places, I found that using `.then()` syntax can still be cleaner at times, such as the code block where I am making fetch requests to the API; in this case, async / await would have required an additional variable and been harder to read, so I opted to use the older promise chain syntax.
 
+- __Serverless functions__
+
+    - While I initially expected to implement the project entirely with client-side JS, it became apparent early on that [CORS](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS) restrictions on the API would render this impossible.
+    - I was aware that I could make the API calls from a server, but I deemed that setting up a server-side infrastructure is beyond the scope of this project, so I looked for alternatives
+    - Serverless functions seemed to be a good fit as they are mostly free (for light use) and can handle NodeJS code, which allowed me to port the client-side code that I had already written to run on the server.
+    - AWS Lambda seems like a good option for this, but seemed extremely hard to configure, so I used [Begin.com](https://begin.com) to create the API gateway and Lambda functions, which was a very straightforward experience and allowed me to focus on the code.
+    - One potential downside of using serverless functions is cold starts; becuase this project is expected to have little-to-no traffic beyond marking / appraisal, it may take 1-2 seconds more than usual to make API calls initially while the instance starts. There appear to be other services that have elimited this issue, such as [Cloudflare Workers](https://blog.cloudflare.com/eliminating-cold-starts-with-cloudflare-workers/) but I did not have time during this project to explore this further.
+
 
 ### Unfixed Bugs
 
