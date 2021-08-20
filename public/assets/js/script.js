@@ -42,7 +42,6 @@ async function analyseSearches() {
     const concerns = await fetch(`../concerns/${seed}`)
         .then(response => response.json());
     // populate each list individually, asynchronously
-    // TODO: parse ASCII tokens (e.g. &#39, for apostrophe)
     populateResultsList('top-searches', topSearches);
     populateResultsList('questions', questions);
     populateResultsList('competitors', competitors);
