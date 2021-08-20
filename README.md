@@ -119,6 +119,11 @@ BSA is heavily influenced by [Answer The Public](https://answerthepublic.com), a
 
 ### Visual
 
+- __Header__
+
+    - [x] Is visible on page load
+    - [x] Is formatted as intended across desktop, tablet and mobile screen sizes
+
 - __Background image__
 
     - [x] Shown on all tested devices (desktop, mobile and tablet)
@@ -126,6 +131,18 @@ BSA is heavily influenced by [Answer The Public](https://answerthepublic.com), a
     - [x] Remains fixed in position on scroll
     - [x] Is "dimmed" with an overlay to ensure good text contrast
     - [x] Is dimmed more towards the top of the page
+
+- __Results area__
+
+    - [x] Hidden on page load
+    - [x] Shown when analysis begins
+
+### Input
+
+- __Search seed__
+
+    - [x] Input box has placeholder text advising user to enter max. 2 words
+    - [x] More than two words can be entered (i.e. limit is a guide but not enforced)
 
 ### Links and buttons
 
