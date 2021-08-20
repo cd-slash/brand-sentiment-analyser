@@ -251,7 +251,8 @@ width border at the bottom of the list box */
     width: 100%;
 }
 
-#further-research-instruction-item .list-item {
+#further-research-instruction-item .list-item,
+.no-results-item {
     background-color: hsl(0, 0%, 85%);
     color: hsl(0, 0%, 45%);
 }

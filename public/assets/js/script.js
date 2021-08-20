@@ -42,7 +42,6 @@ async function analyseSearches() {
     const concerns = await fetch(`../concerns/${seed}`)
         .then(response => response.json());
     // populate each list individually, asynchronously
-    // TODO: handle errors, e.g. empty lists
     // TODO: parse ASCII tokens (e.g. &#39, for apostrophe)
     populateResultsList('top-searches', topSearches);
     populateResultsList('questions', questions);
@@ -53,9 +52,18 @@ async function analyseSearches() {
 function populateResultsList(listName, results) {
     const resultsList = document.getElementById(listName + '-list');
 
-    results.forEach((result) => {
-        resultsList.appendChild(createListItem(result));
-    });
+    if (results.length > 0) {
+        results.forEach((result) => {
+            resultsList.appendChild(createListItem(result));
+        });
+    }
+    else {
+        noResultsItem = createListItem('No results found');
+        // delete the add to research list button
+        noResultsItem.getElementsByTagName('i')[0].remove();
+        noResultsItem.classList.add('no-results-item');
+        resultsList.appendChild(noResultsItem);
+    }
 
     // hide the loading animation in the box header
     document.getElementById(`loading-${listName}`).style.display = 'none';
