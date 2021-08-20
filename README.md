@@ -105,6 +105,14 @@ BSA is heavily influenced by Answer The Public, and while similar, it is not int
     - [x] Is re-enabled when the search seed input text is changed by the user
     - [x] Is greyed out while disabled
     - [x] Is highlighted and clickable while enabled
+
+- __Add to further research__
+
+    - [x] Is shown beside each list item in results lists
+    - [x] Is positioned and formatted as intended
+    - [x] Shows a pointer cursor on hover
+    - [x] Moves the item to the further research list when clicked
+    - [x] Is not shown beside items in the further research list
     - Is initially disabled
     - Is enabled when text is entered into the search seed input
     - Runs the analysis when clicked, or when Enter is pressed while the search seed input has focus
