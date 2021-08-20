@@ -6,64 +6,99 @@ BSA is heavily influenced by Answer The Public, and while similar, it is not int
 
 ## Features 
 
-In this section, you should go over the different parts of your project, and describe each in a sentence or so. You will need to explain what value each of the features provides for the user, focusing on who this website is for, what it is that they want to achieve and how your project is the best way to help them achieve these things.
+- __Heading__
 
-### Existing Features
-
-- __Navigation Bar__
-
-  - Featured at the top of the site, the full responsive navigation bar includes links to the home page, benefits section, first ride checklist and class picks areas of the site.
-  - This section will allow the user to easily navigate from page to page across all devices without having to revert back to the previous page via the ‘back’ button.
+  - Featured at the top of the site, the heading makes clear the benefit to the user: understanding what people are asking about a particular brand.
 
   ![Navbar screenshot](assets/screenshots/screen_navbar.png "Navbar")
 
-- __Hero image__
+- __Background image__
 
-  - The hero image is intended to feel inspirational to the user and position the content on the site as being produced by experts.
+  - Lorem ipsum
 
   ![Hero image screenshot](assets/screenshots/screen_hero.png "Hero")
 
-- __The benefits__
+- __Rotating search seed suggestions__
 
-  - The benefits will give the user a brief summary of some of the health & wellbeing benefits of spin classes.
-  - The user should feel equipped to make a decision about whether or not to take a spin class after reading this section.
+  - The rotating suggestions within the heading highlight that the user can input any brand they wish, whether it is their own or a brand they are interested in.
+  - The "typewriter" effect on the suggested brands rotation emphasises that the user can enter these brands, or any other, as a search seed to get results.
+
+  ![Navbar screenshot](assets/screenshots/screen_navbar.png "Navbar")
+
+- __Call to action__
+
+  - Immediately below the heading and seed suggestions, there is a clear call to action, asking the user to enter a search seed to get results.
+  - The placeholder text within the seed input box 
+
+  ![Navbar screenshot](assets/screenshots/screen_navbar.png "Navbar")
+
+- __Search seed input and Analyse button__
+
+  - Lorem ipsum
+
+  ![Hero image screenshot](assets/screenshots/screen_hero.png "Hero")
+
+- __Results area__
+
+  - Lorem ipsum
 
   ![Benefits section screenshot](assets/screenshots/screen_benefits.png "Benefits")
 
-- __First class checklist__
+- __Loading animation__
 
-  - The checklist will list the various pieces of equipment a first-time rider should have, and also include some pre-class preparation tips.
-  - The first class checklist will allow users to feel confident that they have what they need and know what to expect before their first spin class. 
+  - Lorem ipsum
 
   ![Checklist screenshot](assets/screenshots/screen_checklist.png "Checklist")
 
-- __Class picks__
+- __Help tooltips__
 
-  - This section will allow the user to identify the best type of class for them (e.g. Power Zone, Low Impact, etc.) and the time it's on this week. 
-  - This section will be updated as new class types become popular or their details change.
+  - Lorem ipsum
 
   ![Class picks screenshot](assets/screenshots/screen_picks.png "Class picks")
 
-- __The Footer__ 
+- __Top searches__ 
 
-  - The footer section includes links to the relevant social media sites for Spin Expert, helping users find other like-minded people.
-  - Community is important to users as they will be able to ask questions, find other resources, and get feedback / encouragement.
+  - Lorem ipsum
+
+  ![Footer screenshot](assets/screenshots/screen_footer.png "Footer")
+
+- __Questions__ 
+
+  - Lorem ipsum
+
+  ![Footer screenshot](assets/screenshots/screen_footer.png "Footer")
+
+- __Competitors__ 
+
+  - Lorem ipsum
+
+  ![Footer screenshot](assets/screenshots/screen_footer.png "Footer")
+
+- __Concerns__ 
+
+  - Lorem ipsum
+
+  ![Footer screenshot](assets/screenshots/screen_footer.png "Footer")
+
+- __Further research__ 
+
+  - Lorem ipsum
 
   ![Footer screenshot](assets/screenshots/screen_footer.png "Footer")
 
 ### Features Left to Implement
 
-- __Community forum & signup__
+- __Animation when adding item to further research list__
 
-  - This section will allow users to talk to other site users to ask questions and provide support. Users should be able to sign up with their email address or a social media account via OAuth.
+  - Lorem ipsum
 
 ## Testing 
 
 ### Links
 
-All internal links in the navigation area take the user to the correct area of the site. All external links point to the correct place and open in a new tab, as intended.
+Lorem ipsum
 
-### Responsive
+### Responsiveness
 
 I have confirmed that each section of the site displays well across a variety of screensizes, testing using Firefox Developer Tools and also by opening the site an a laptop, tablet and phone to confirm that the media queries correctly adjust certain elements for different screen sizes as needed.
 
@@ -90,16 +125,25 @@ I have tested cross-browser support by viewing the site in Firefox, Chrome and S
 - CSS
   - No errors were found when passing through the official [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fharryowens.github.io%2FSpin-expert%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
 
+### Observations / learning points
+
+- __Animation when adding item to further research list__
+
+  - Lorem ipsum
+
 ### Unfixed Bugs
 
-None observed.
+- __Parsing "&" in search seed__
+
+  - Lorem ipsum
+
+- __Competitors list can contain non-competitor results__
+
+  - Lorem ipsum
 
 ## Deployment
 
-- The site was deployed to GitHub pages. The steps to deploy are as follows: 
-  - In the GitHub repository, navigate to the Settings tab 
-  - From the source section drop-down menu, select the Master Branch
-  - Once the master branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment. 
+- The site is deployed with AWS Lambda serverless functions, via Begin.com
 
 The live link can be found here - https://harryowens.github.io/Spin-expert/
 
