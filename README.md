@@ -100,7 +100,8 @@ BSA is heavily influenced by [Answer The Public](https://answerthepublic.com), a
 
 - __Animation when adding item to further research list__
 
-  - Lorem ipsum
+  - It would be helpful to show the items moving from the results list to the further research list; presently, the item simply disappears from the results list and appears in the further research list, which has the potential to confuse the user or make them think the item was deleted instead of moved.
+  - This kind of animation is relatively straightforward with a component-based framework, but I view it as beyond the scope of this vanilla JS project given the difficulty of implementation.
 
 - __Background video__
 
@@ -109,6 +110,10 @@ BSA is heavily influenced by [Answer The Public](https://answerthepublic.com), a
 - __Automated testing__
 
   - The testing checklists shown in this document could be automated and run as unit or end-to-end tests as part of the CI / build process
+
+- __Region selection__
+
+  - Autocomplete suggestions differ according to where they're obtained from geographically; currently, all suggestions are obtained from AWS servers in the US and are thus US-specific.
 
 ## Testing 
 
