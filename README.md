@@ -129,9 +129,12 @@ BSA is heavily influenced by Answer The Public, and while similar, it is not int
     - [x] Formatted as intended on all screen sizes
 
 - __Expand further research list button__
+- __Expand / collapse further research list button__
 
-    - [x] Shown beside each list item in further research list
-    - [x] Opens a Google search for the item in a new tab
+    - [x] Shown in header of further research box
+    - [x] Expands the further research box on click (when collapsed)
+    - [x] Rotates to become a "collapse" button when list is expanded
+    - [x] Collapses the further research box on click (when expanded)
     - [x] Formatted as intended on all screen sizes
     - Is initially disabled
 
