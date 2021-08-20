@@ -98,6 +98,13 @@ BSA is heavily influenced by Answer The Public, and while similar, it is not int
 
 - __Analyse button__
 
+    - [x] Is initially disabled
+    - [x] Is enabled when text is entered into the search seed input
+    - [x] Runs the analysis when clicked, or when Enter is pressed while the search seed input has focus
+    - [x] Is re-disabled when the analysis is run (prevents duplicate query)
+    - [x] Is re-enabled when the search seed input text is changed by the user
+    - [x] Is greyed out while disabled
+    - [x] Is highlighted and clickable while enabled
     - Is initially disabled
     - Is enabled when text is entered into the search seed input
     - Runs the analysis when clicked, or when Enter is pressed while the search seed input has focus
