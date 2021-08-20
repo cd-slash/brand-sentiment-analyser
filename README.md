@@ -272,6 +272,17 @@ BSA is heavily influenced by [Answer The Public](https://answerthepublic.com), a
     - [x] Items are removed when sent to the further research list
     - [ ] Shows a "no results" placeholder if there are no appropriate search suggestions (e.g. if user specifies inappropriate / adult search seeds)
 
+- __Further research__
+
+    - [x] Initially contains only a single instruction placeholder
+    - [x] Shows items added by the user by clicking the "+" icon on a results list item
+    - [x] No limit to number of results in the list
+    - [x] Area spans full width of the page (with margins)
+    - [x] Long result text is truncated with an elipsis ("...") to avoid wrapping
+    - [x] All items (except initial instruction placeholder) have an "external link" icon
+    - [x] Clicking "external link" icon performs a Google search for the (non-truncated) search term in a new tab
+    - [x] Items are retained in the list across analysis sessions (i.e. when user enters a new seed and clicks "Analyse")
+
 ### Responsiveness
 
 The site displays well across a variety of screensizes and devices, tested using Firefox Developer Tools and also by opening the site an a laptop, tablet and phone to confirm. The specific checklist items for each feature detail the testing on each screensize.
