@@ -107,12 +107,19 @@ BSA is heavily influenced by Answer The Public, and while similar, it is not int
     - [x] Is highlighted and clickable while enabled
 
 - __Add to further research__
+- __Add to further research buttons__
 
     - [x] Is shown beside each list item in results lists
     - [x] Is positioned and formatted as intended
     - [x] Shows a pointer cursor on hover
     - [x] Moves the item to the further research list when clicked
     - [x] Is not shown beside items in the further research list
+
+- __External search buttons__
+
+    - [x] Is shown beside each list item in further research list
+    - [x] Opens a Google search for the item in a new tab
+    - [x] Is formatted as intended
     - Is initially disabled
 
 ### Responsiveness
