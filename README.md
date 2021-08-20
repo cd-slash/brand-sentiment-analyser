@@ -94,6 +94,16 @@ BSA is heavily influenced by Answer The Public, and while similar, it is not int
 
 ## Testing 
 
+### Visual
+
+- __Background image__
+
+    - [x] Shown on all tested devices (desktop, mobile and tablet)
+    - [x] Covers the full size of the page
+    - [x] Remains fixed in position on scroll
+    - [x] Is "dimmed" with an overlay to ensure good text contrast
+    - [x] Is dimmed more towards the top of the page
+
 ### Links and buttons
 
 - __Analyse button__
