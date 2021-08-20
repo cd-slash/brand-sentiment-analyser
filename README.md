@@ -14,7 +14,7 @@ BSA is heavily influenced by [Answer The Public](https://answerthepublic.com), a
 
 - __Background image__
 
-  - Lorem ipsum
+  - The background image takes up the majority of the screen on initial page load, showing a crowd of people towards the bottom of the screen, to let the user know that the tool helps them to understand what people collectively are searching for in relation to a brand.
 
   ![Hero image screenshot](assets/screenshots/screen_hero.png "Hero")
 
