@@ -234,19 +234,43 @@ BSA is heavily influenced by [Answer The Public](https://answerthepublic.com), a
 
 - __Top searches__
 
-    - Is initially disabled
+    - [x] Initially blank
+    - [x] Shows top search term suggestions based on the user's seed
+    - [x] Displays a maximum of 5 results
+    - [x] Results do not wrap to multiple lines
+    - [x] Long result text is truncated with an elipsis ("...") to avoid wrapping
+    - [x] Items are removed when sent to the further research list
+    - [ ] Shows a "no results" placeholder if there are no appropriate search suggestions (e.g. if user specifies inappropriate / adult search seeds)
 
 - __Questions__
 
-    - Is initially disabled
+    - [x] Initially blank
+    - [x] Shows search term suggestions containing "which" or "what" based on the user's seed
+    - [x] Displays a maximum of 5 results
+    - [x] Results do not wrap to multiple lines
+    - [x] Long result text is truncated with an elipsis ("...") to avoid wrapping
+    - [x] Items are removed when sent to the further research list
+    - [ ] Shows a "no results" placeholder if there are no appropriate search suggestions (e.g. if user specifies inappropriate / adult search seeds)
 
 - __Competitors__
 
-    - Is initially disabled
+    - [x] Initially blank
+    - [x] Shows search term suggestions containing "vs" with the user's seed and "vs" removed from the result
+    - [x] Displays a maximum of 5 results
+    - [x] Results do not wrap to multiple lines
+    - [x] Long result text is truncated with an elipsis ("...") to avoid wrapping
+    - [x] Items are removed when sent to the further research list
+    - [ ] Shows a "no results" placeholder if there are no appropriate search suggestions (e.g. if user specifies inappropriate / adult search seeds)
 
 - __Concerns__
 
-    - Is initially disabled
+    - [x] Initially blank
+    - [x] Shows search term suggestions containing "bad" or "help" along with the user's specified search seed
+    - [x] Displays a maximum of 5 results
+    - [x] Results do not wrap to multiple lines
+    - [x] Long result text is truncated with an elipsis ("...") to avoid wrapping
+    - [x] Items are removed when sent to the further research list
+    - [ ] Shows a "no results" placeholder if there are no appropriate search suggestions (e.g. if user specifies inappropriate / adult search seeds)
 
 ### Responsiveness
 
