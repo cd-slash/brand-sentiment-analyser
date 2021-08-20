@@ -88,9 +88,22 @@ BSA is heavily influenced by Answer The Public, and while similar, it is not int
 
 ### Features Left to Implement
 
+- __Delete item from results list__
+
+  - Items can not currently be deleted from results list, e.g. if they are unrelated to the brand search
+  - While it would be trivial to allow a user to delete individual list items, these would not persist across sessions without considerable additional infrastructure to maintain state, so I opted not to include a delete button to avoid user frustration
+
 - __Animation when adding item to further research list__
 
   - Lorem ipsum
+
+- __Background video__
+
+  - The background is highly visible on initial page load and replacing with a video may enhance visual appeal
+
+- __Automated testing__
+
+  - The testing checklists shown in this document could be automated and run as unit or end-to-end tests as part of the CI / build process
 
 ## Testing 
 
