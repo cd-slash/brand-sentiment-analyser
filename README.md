@@ -278,6 +278,10 @@ BSA is heavily influenced by [Answer The Public](https://answerthepublic.com), a
     - [x] Shows items added by the user by clicking the "+" icon on a results list item
     - [x] No limit to number of results in the list
     - [x] Area spans full width of the page (with margins)
+    - [x] Items are arranged in a grid
+    - [x] New items fill from left of box by row
+    - [x] rows wrap when full
+    - [x] New items are added in front of the instruction item, but after any items added previously
     - [x] Long result text is truncated with an elipsis ("...") to avoid wrapping
     - [x] All items (except initial instruction placeholder) have an "external link" icon
     - [x] Clicking "external link" icon performs a Google search for the (non-truncated) search term in a new tab
