@@ -208,7 +208,7 @@ BSA is heavily influenced by Answer The Public, and while similar, it is not int
 
 ### Responsiveness
 
-I have confirmed that each section of the site displays well across a variety of screensizes, testing using Firefox Developer Tools and also by opening the site an a laptop, tablet and phone to confirm that the media queries correctly adjust certain elements for different screen sizes as needed.
+    - Is initially disabled
 
 There was an issue in a previous version which caused a horizontal scroll due to an unhidden overflow on smaller screens, which was resolved by hiding the overflow on the benefits section.
 
@@ -219,12 +219,15 @@ I was keen to "bake in" responsiveness in some sections by using card design pat
 An example of the responsive checklist produced without the need for media queries is below:
 
 ![Checklist tablet screenshot](assets/screenshots/screen_responsive_checklist.png "Responsive checklist")
+### Responsiveness
 
 An interesting point noted when testing was that when the screen width was smaller than 1330px (which is the hero image height of 600px * hero image aspect ratio) there was always a variable-size top and bottom border on the hero image since the aspect ratio of the image did not match its container when the size of the container was set to an absolute value of 600px. This was corrected by making the height of the container and image relative to the viewport width, i.e. using `vw` units, which also avoided the need to make the image smaller using media queries when the screen size is smaller. This way, the aspect ratio of the image is also maintained.
+The site displays well across a variety of screensizes and devices, tested using Firefox Developer Tools and also by opening the site an a laptop, tablet and phone to confirm. The specific checklist items for each feature detail the testing on each screensize.
 
 ### Cross-browser
 
 I have tested cross-browser support by viewing the site in Firefox, Chrome and Safari with no issues observed.
+I have tested cross-browser support by viewing the site in Firefox, Chrome and Safari on MacOS, and also Chrome and Safari on iOS. As noted in the CSS validator testing section of this readme, Safari on iOS does not support the `text-decoration-skip-ink` property, so the rotating seed suggestions in the header are slightly less readable, but otherwise no significant differences were observed.
 
 ### Validator Testing 
 
