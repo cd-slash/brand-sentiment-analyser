@@ -240,7 +240,7 @@ BSA is heavily influenced by [Answer The Public](https://answerthepublic.com), a
     - [x] Results do not wrap to multiple lines
     - [x] Long result text is truncated with an elipsis ("...") to avoid wrapping
     - [x] Items are removed when sent to the further research list
-    - [ ] Shows a "no results" placeholder if there are no appropriate search suggestions (e.g. if user specifies inappropriate / adult search seeds)
+    - [x] Shows a "no results" placeholder if there are no appropriate search suggestions (e.g. if user specifies inappropriate / adult search seeds)
 
 - __Questions__
 
@@ -250,7 +250,7 @@ BSA is heavily influenced by [Answer The Public](https://answerthepublic.com), a
     - [x] Results do not wrap to multiple lines
     - [x] Long result text is truncated with an elipsis ("...") to avoid wrapping
     - [x] Items are removed when sent to the further research list
-    - [ ] Shows a "no results" placeholder if there are no appropriate search suggestions (e.g. if user specifies inappropriate / adult search seeds)
+    - [x] Shows a "no results" placeholder if there are no appropriate search suggestions (e.g. if user specifies inappropriate / adult search seeds)
 
 - __Competitors__
 
@@ -260,7 +260,7 @@ BSA is heavily influenced by [Answer The Public](https://answerthepublic.com), a
     - [x] Results do not wrap to multiple lines
     - [x] Long result text is truncated with an elipsis ("...") to avoid wrapping
     - [x] Items are removed when sent to the further research list
-    - [ ] Shows a "no results" placeholder if there are no appropriate search suggestions (e.g. if user specifies inappropriate / adult search seeds)
+    - [x] Shows a "no results" placeholder if there are no appropriate search suggestions (e.g. if user specifies inappropriate / adult search seeds)
 
 - __Concerns__
 
@@ -270,7 +270,7 @@ BSA is heavily influenced by [Answer The Public](https://answerthepublic.com), a
     - [x] Results do not wrap to multiple lines
     - [x] Long result text is truncated with an elipsis ("...") to avoid wrapping
     - [x] Items are removed when sent to the further research list
-    - [ ] Shows a "no results" placeholder if there are no appropriate search suggestions (e.g. if user specifies inappropriate / adult search seeds)
+    - [x] Shows a "no results" placeholder if there are no appropriate search suggestions (e.g. if user specifies inappropriate / adult search seeds)
 
 - __Further research__
 
