@@ -123,7 +123,8 @@ I have tested cross-browser support by viewing the site in Firefox, Chrome and S
 - HTML
   - No errors were returned when passing through the official [W3C validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fharryowens.github.io%2FSpin-expert%2F)
 - CSS
-  - No errors were found when passing through the official [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fharryowens.github.io%2FSpin-expert%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
+  - 3 errors were noteed by the official [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fharryowens.github.io%2FSpin-expert%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en), relating to 3 uses of two properties that do not exist according to the validator. These errors directly conflict with good browser support for these tags across all common platforms; Can I Use notes that `text-decoration-thickness` is supported by the browser for over 88% of users, while more than 75% of users have support for `text-decoration-skip-ink` (the major difference with the latter being no support on Safari for iOS, which is ~10% of users).
+  - As these properties enhance the readability of the text in the rotating search suggestions and also improve the visual hierarchy, I have opted not to remove them despite the validator errors, noting that I have been unable to find any suitable alternative property to replace them with. On browsers without support for `text-decoration-skip-ink`, the text will be slightly less readable as characters descending below the line will merge with the underline, while browsers without support for `text-decoration-thickness` will have a thinner underline that emphasises the suggestions less, but is no less readable.
 
 ### Observations / learning points
 
