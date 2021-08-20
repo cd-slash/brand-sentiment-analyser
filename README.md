@@ -22,6 +22,7 @@ BSA is heavily influenced by [Answer The Public](https://answerthepublic.com), a
 
   - The rotating suggestions within the heading highlight that the user can input any brand they wish, whether it is their own or a brand they are interested in.
   - The "typewriter" effect on the suggested brands rotation emphasises that the user can enter these brands, or any other, as a search seed to get results.
+  - The typewriter effect is implemented in Javascript, firstly because this is a JS project so I was looking for a JS solution, but also because many CSS-only solutions seemed to be compromised when using a non-monospaced font (they rely on a progressive reveal / hiding of characters at fixed distance intervals). It may be that my JS solution is less performant than a CSS-only solution because I am adding to/from the DOM each time a letter is added or removed, but I have not benchmarked this as it seems beyond the scope of the project.
 
   ![Navbar screenshot](assets/screenshots/screen_navbar.png "Navbar")
 
