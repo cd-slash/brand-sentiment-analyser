@@ -242,17 +242,22 @@ I have tested cross-browser support by viewing the site in Firefox, Chrome and S
 
 ### Unfixed Bugs
 
-- __Parsing "&" in search seed__
+- __Parsing "&" in search seed is not parsed correctly__
 
-  - Lorem ipsum
+    - E.g. entering "M&S sandwich" as the seed is interpreted as "M S sandwich" yielding strange results
+    - The API interprets "&" as joining two search terms, even when there are no spaces between the characters
+    - This can usually be worked around by putting quotes around the term containing the ampersand, but this is not clear to users and is not always effective
 
 - __Competitors list can contain non-competitor results__
 
-  - Lorem ipsum
+    - E.g. the seed term "Xbox" shows "PS5 sales" in the competitors list
+    - While "PS5" is a legitimate competitor, this is a limitation of the competitors search results since a suggestion to compare Xbox and PS5 sales will result in the full term "PS5 sales" being interpreted as a competitor, rather than just PS5
+    - This also leads to duplicates, since "PS5" is shown elsewhere in the list
 
 - __Concerns list can include apparently positive suggestions__
 
-    - Is initially disabled
+    - E.g. when using the search seed "Peloton", the concerns list includes "Peloton help lose weight" which is not a concern about the brand or product
+    - This is a consequence of how the suggestions work, since a high-ranking suggestion containing "help" is expected to be a concern
 
 ## Deployment
 
