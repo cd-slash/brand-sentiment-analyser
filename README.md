@@ -231,29 +231,29 @@ BSA is heavily influenced by [Answer The Public](https://answerthepublic.com), a
     - [x] List items are stacked vertically
     - [x] Lists reduce in height when items are removed from all lists in a row on desktop / tablet
     - [x] Lists reduce in height when items are removed from any list on mobile
+
+- __Top searches__
+
+    - Is initially disabled
+
+- __Questions__
+
+    - Is initially disabled
+
+- __Competitors__
+
+    - Is initially disabled
+
+- __Concerns__
+
     - Is initially disabled
 
 ### Responsiveness
 
-    - Is initially disabled
-
-There was an issue in a previous version which caused a horizontal scroll due to an unhidden overflow on smaller screens, which was resolved by hiding the overflow on the benefits section.
-
-While addressing the horizontal scroll issue, I further observed some issues with the cover text on the hero image, which has also now been addressed by progressively reducing the font size using media queries and reducing the margins around the cover box to avoid too much overlap of the hero image.
-
-I was keen to "bake in" responsiveness in some sections by using card design patterns with concepts such as flexbox, which I read about when studying the css fundamentals course. This allowed me to make both the first class checklist and class picks section to reconfigure the layout automatically, without media queries. I also used the techniques I learned in the Love Running project to create the benefits section in a way that required media queries; this seemed considerably more cumbersome than using small, fixed-size elements that can move from horizontal rows to stacked columns dynamically, though I recognise that both techniques have their pros and cons.
-
-An example of the responsive checklist produced without the need for media queries is below:
-
-![Checklist tablet screenshot](assets/screenshots/screen_responsive_checklist.png "Responsive checklist")
-### Responsiveness
-
-An interesting point noted when testing was that when the screen width was smaller than 1330px (which is the hero image height of 600px * hero image aspect ratio) there was always a variable-size top and bottom border on the hero image since the aspect ratio of the image did not match its container when the size of the container was set to an absolute value of 600px. This was corrected by making the height of the container and image relative to the viewport width, i.e. using `vw` units, which also avoided the need to make the image smaller using media queries when the screen size is smaller. This way, the aspect ratio of the image is also maintained.
 The site displays well across a variety of screensizes and devices, tested using Firefox Developer Tools and also by opening the site an a laptop, tablet and phone to confirm. The specific checklist items for each feature detail the testing on each screensize.
 
 ### Cross-browser
 
-I have tested cross-browser support by viewing the site in Firefox, Chrome and Safari with no issues observed.
 I have tested cross-browser support by viewing the site in Firefox, Chrome and Safari on MacOS, and also Chrome and Safari on iOS. As noted in the CSS validator testing section of this readme, Safari on iOS does not support the `text-decoration-skip-ink` property, so the rotating seed suggestions in the header are slightly less readable, but otherwise no significant differences were observed.
 
 ### Validator Testing 
@@ -268,7 +268,7 @@ I have tested cross-browser support by viewing the site in Firefox, Chrome and S
 
 - __Animation when adding item to further research list__
 
-  - Lorem ipsum
+    - Lorem ipsum
 
 ### Unfixed Bugs
 
@@ -300,11 +300,11 @@ The live link can be found here - https://harryowens.github.io/Spin-expert/
 
 ### Content 
 
-- The text for each section is original and written by me
-- The header and benefits section was heavily influenced by the Love Running project from Code Institute
+- The concept of the tool is heavily inspired by Answer The Public
+- The results are derived from Google Autocomplete search suggestions via the API
 - The cards for the checklist were derived form an example on [W3Schools] (https://www.w3schools.com/howto/howto_css_cards.asp)
 
 ### Media
 
-- The photos used for the hero image, benefits section and checklist are from Unsplash
-- The images used for the spin class instructors are from their profiles on onepeloton.com
+- The background image is from Unsplash
+- The icons for the buttons are from Font Awesome
