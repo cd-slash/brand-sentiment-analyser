@@ -34,55 +34,60 @@ BSA is heavily influenced by [Answer The Public](https://answerthepublic.com), a
 
 - __Search seed input and Analyse button__
 
-  - Lorem ipsum
+  - The search seed input box has a placeholder to give the user a prompt to enter a brand.
+  - Placeholder text tells the user to use a maximum of 2 words; while more than 2 will not cause an error, it will likely reduce the number of results and be less effective. For this reason, the user gets a prompt, but the limit is not enforced.
 
   ![Hero image screenshot](assets/screenshots/screen_hero.png "Hero")
 
 - __Results area__
 
-  - Lorem ipsum
+  - The results area lays out the top search suggestions for the user separated into 4 categories: Top searches, questions, competitors and concerns
+  - All results are derived from Google's autocomplete suggestions API
+  - The results area is hidden initially to direct the user to complete the seed input first
 
   ![Benefits section screenshot](assets/screenshots/screen_benefits.png "Benefits")
 
 - __Loading animation__
 
-  - Lorem ipsum
+  - The user is reassured that the system is calculating the results by presenting a loading animation on each results box until the query to the server is finished
+  - Each loading animation is independently controlled, in case the timing of the queries resolving is not synced
 
   ![Checklist screenshot](assets/screenshots/screen_checklist.png "Checklist")
 
 - __Help tooltips__
 
-  - Lorem ipsum
+  - The user can see the purpose of each results list by hovering over (or touching on mobile) the "?" icon
 
   ![Class picks screenshot](assets/screenshots/screen_picks.png "Class picks")
 
 - __Top searches__ 
 
-  - Lorem ipsum
+  - This list presents the top search suggestions - i.e. the most common search terms that Google expects people to search for given the seed term that the user provided 
 
   ![Footer screenshot](assets/screenshots/screen_footer.png "Footer")
 
 - __Questions__ 
 
-  - Lorem ipsum
+  - The most common search terms that include the words "what" or "which" that Google expects people to search for given the provided seed
 
   ![Footer screenshot](assets/screenshots/screen_footer.png "Footer")
 
 - __Competitors__ 
 
-  - Lorem ipsum
+  - Brands and/or products that compete with the brand the user has selected, based on search suggestions containing the seed brand and "vs", i.e. brands or products that people often compare.
 
   ![Footer screenshot](assets/screenshots/screen_footer.png "Footer")
 
 - __Concerns__ 
 
-  - Lorem ipsum
+  - Common search terms that include the words "bad" or "help" - usually these are related to concerns about the brand or product.
 
   ![Footer screenshot](assets/screenshots/screen_footer.png "Footer")
 
 - __Further research__ 
 
-  - Lorem ipsum
+  - The user may wish to research some of the results further by doing a Google search for that term; adding items to the further research list allows them to do this
+  - The further research list saves items across multiple analysis sessions - e.g. if a user enters the seed "Macbook" and saves a term from the top searches list, the saved term will be retained there to allow the user to enter a new seed, e.g. "HP Spectre" and also saves an item from the results of that analysis, both saved terms will be available for further analysis.
 
   ![Footer screenshot](assets/screenshots/screen_footer.png "Footer")
 
