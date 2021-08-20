@@ -322,7 +322,7 @@ derived from: http://www.menucool.com/tooltip/css-tooltip */
 }
 
 /* media queries for responsiveness */
-/* smaller tablets */
+/* larger tablets */
 @media screen and (max-width: 900px) {
 
     #header-area>h1 {
@@ -345,6 +345,7 @@ derived from: http://www.menucool.com/tooltip/css-tooltip */
 
 }
 
+/* Smaller tablets */
 @media screen and (max-width: 700px) {
 
     #header-area>h1 {
@@ -407,6 +408,7 @@ derived from: http://www.menucool.com/tooltip/css-tooltip */
 
 }
 
+/* Phones */
 @media screen and (max-width: 400px) {
 
     #header-area>h1 {
