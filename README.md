@@ -340,6 +340,7 @@ The live link can be found here - https://harryowens.github.io/Spin-expert/
 - Code to trigger the analysis on pressing Enter was derived from [W3Schools](https://www.w3schools.com/howto/howto_js_trigger_button_enter.asp)
 - Element unique ID code was sourced from a [GitHub Gist](https://gist.github.com/gordonbrander/2230317)
 - Async/await time delay function is from [Stack Overflow](https://stackoverflow.com/a/44476626/726221)
+- Tooltips HTML & CSS is from the [Menucool generator](http://www.menucool.com/tooltip/css-tooltip)
 
 ### Media
 
