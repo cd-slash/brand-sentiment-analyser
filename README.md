@@ -337,7 +337,9 @@ The live link can be found here - https://harryowens.github.io/Spin-expert/
 
 - The concept of the tool is heavily inspired by Answer The Public
 - The results are derived from Google Autocomplete search suggestions via the API
-- The cards for the checklist were derived form an example on [W3Schools] (https://www.w3schools.com/howto/howto_css_cards.asp)
+- Code to trigger the analysis on pressing Enter was derived from [W3Schools](https://www.w3schools.com/howto/howto_js_trigger_button_enter.asp)
+- Element unique ID code was sourced from a [GitHub Gist](https://gist.github.com/gordonbrander/2230317)
+- Async/await time delay function is from [Stack Overflow](https://stackoverflow.com/a/44476626/726221)
 
 ### Media
 
