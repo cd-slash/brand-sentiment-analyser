@@ -160,6 +160,20 @@ BSA is heavily influenced by Answer The Public, and while similar, it is not int
     - [x] Reduces in size on smaller screens
     - [x] Does not wrap to second line on any tested screen size
 
+
+### Results
+
+- __Layout__
+
+    - [x] Results lists are arranged in a grid on tablet / desktop
+    - [x] Lists are stacked vertically on mobile
+    - [x] Grid or vertical stack covers the full width of the screen (except extremely large screens)
+    - [x] List widths resize to fill available space
+    - [x] Lists have equal height within rows
+    - [x] List items cover the width of the list (with margins)
+    - [x] List items are stacked vertically
+    - [x] Lists reduce in height when items are removed from all lists in a row on desktop / tablet
+    - [x] Lists reduce in height when items are removed from any list on mobile
     - Is initially disabled
 
 ### Responsiveness
