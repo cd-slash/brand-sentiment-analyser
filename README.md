@@ -305,9 +305,13 @@ I have tested cross-browser support by viewing the site in Firefox, Chrome and S
 
 ### Observations / learning points
 
-- __Animation when adding item to further research list__
+- __Asynchronous code__
 
-    - Lorem ipsum
+    - While I recognised the need to make API calls asynchronously, building the rotating brand suggestions feature required me to learn a lot more anout asynchronous code in JS.
+    - Initially, I tried to build the feature with synchronous code, but found that it was blocking user input while running, which would not have worked. Given the single-threaded nature of Javascript, I recognised quickly that I needed to do this asynchronously.
+    - The concept of asynchronous JS is simple, but it took quite a while to get a handle on the various ways to implement it (including Promises), as is visible in the git history, though the ES6 async / await syntax seems to have simplified this significantly.
+    - While I have used async / await in most places, I found that using `.then()` syntax can still be cleaner at times, such as the code block where I am making fetch requests to the API; in this case, async / await would have required an additional variable and been harder to read, so I opted to use the older promise chain syntax.
+
 
 ### Unfixed Bugs
 
