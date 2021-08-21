@@ -81,20 +81,20 @@ When users are presented with topical search terms, questions, competitors or co
 
   - Brands and/or products that compete with the brand the user has selected, based on search suggestions containing the seed brand and "vs", i.e. brands or products that people often compare.
 
-  ![Footer screenshot](assets/screenshots/screen_footer.png "Footer")
+  [![Competitors screenshot](https://i.gyazo.com/7baa91ba94e98396e6be243de432b5fc.png)](https://gyazo.com/7baa91ba94e98396e6be243de432b5fc)
 
 - __Concerns__ 
 
   - Common search terms that include the words "bad" or "help" - usually these are related to concerns about the brand or product.
 
-  ![Footer screenshot](assets/screenshots/screen_footer.png "Footer")
+  [![Concerns screenshot](https://i.gyazo.com/bbb4dd120d08b9e77bace25300e95387.png)](https://gyazo.com/bbb4dd120d08b9e77bace25300e95387)
 
 - __Further research__ 
 
   - The user may wish to research some of the results further by doing a Google search for that term; adding items to the further research list allows them to do this
   - The further research list saves items across multiple analysis sessions - e.g. if a user enters the seed "Macbook" and saves a term from the top searches list, the saved term will be retained there to allow the user to enter a new seed, e.g. "HP Spectre" and also saves an item from the results of that analysis, both saved terms will be available for further analysis.
 
-  ![Footer screenshot](assets/screenshots/screen_footer.png "Footer")
+  [![Further research screenshot](https://i.gyazo.com/4cad7e0dc7362adf41f887449a9b003f.png)](https://gyazo.com/4cad7e0dc7362adf41f887449a9b003f)
 
 ### Features Left to Implement
 
