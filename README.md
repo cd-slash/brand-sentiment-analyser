@@ -118,6 +118,10 @@ When users are presented with topical search terms, questions, competitors or co
 
   - Autocomplete suggestions differ according to where they're obtained from geographically; currently, all suggestions are obtained from AWS servers in the US and are thus US-specific.
 
+- __Download as CSV__
+
+  - Currently neither the results lists nor the further research list can be downloaded for use in other applications; allowing users to download as CSV would be a useful feature.
+
 ## Testing 
 
 ### Visual
