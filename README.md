@@ -26,7 +26,7 @@ When users are presented with topical search terms, questions, competitors or co
   - The "typewriter" effect on the suggested brands rotation emphasises that the user can enter these brands, or any other, as a search seed to get results.
   - The typewriter effect is implemented in Javascript, firstly because this is a JS project so I was looking for a JS solution, but also because many CSS-only solutions seemed to be compromised when using a non-monospaced font (they rely on a progressive reveal / hiding of characters at fixed distance intervals). It may be that my JS solution is less performant than a CSS-only solution because I am adding to/from the DOM each time a letter is added or removed, but I have not benchmarked this as it seems beyond the scope of the project.
 
-  ![Navbar screenshot](assets/screenshots/screen_navbar.png "Navbar")
+  [![Rotating seeds screenshot](https://i.gyazo.com/f84e36dae30f19df1baa0a0a92d4d6f2.gif)](https://gyazo.com/f84e36dae30f19df1baa0a0a92d4d6f2)
 
 - __Call to action__
 
