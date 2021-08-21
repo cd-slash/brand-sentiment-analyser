@@ -264,6 +264,7 @@ When users are presented with topical search terms, questions, competitors or co
 
     - [x] Initially blank
     - [x] Shows search term suggestions containing "vs" with the user's seed and "vs" removed from the result
+    - [x] Does not include user's seed in results when seed has capitalised letters
     - [x] Displays a maximum of 5 results
     - [x] Results do not wrap to multiple lines
     - [x] Long result text is truncated with an elipsis ("...") to avoid wrapping
