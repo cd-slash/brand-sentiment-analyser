@@ -41,7 +41,7 @@ When users are presented with topical search terms, questions, competitors or co
   - Placeholder text tells the user to use a maximum of 2 words; while more than 2 will not cause an error, it will likely reduce the number of results and be less effective. For this reason, the user gets a prompt, but the limit is not enforced.
   - The analyse button is initially disabled and greyed out, becoming clickable when a seed is entered. It is disabled again once clicked to avoid a duplicate query, and is enabled again when the user enters a different search seed.
 
-  [![Image from Gyazo](https://i.gyazo.com/f47a3729b6dbf5c5d06a4fb15e546ebd.gif)](https://gyazo.com/f47a3729b6dbf5c5d06a4fb15e546ebd)
+  [![Seed input screenshot](https://i.gyazo.com/f47a3729b6dbf5c5d06a4fb15e546ebd.gif)](https://gyazo.com/f47a3729b6dbf5c5d06a4fb15e546ebd)
 
 - __Results area__
 
