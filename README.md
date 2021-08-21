@@ -12,13 +12,13 @@ When users are presented with topical search terms, questions, competitors or co
 
   - Featured at the top of the site, the heading makes clear the benefit to the user: understanding what people are asking about a particular brand.
 
-  ![Navbar screenshot](assets/screenshots/screen_navbar.png "Navbar")
+  [![Heading screenshot](https://i.gyazo.com/301c577314513f81bf1ac59cdc80cf1c.png)](https://gyazo.com/301c577314513f81bf1ac59cdc80cf1c)
 
 - __Background image__
 
   - The background image takes up the majority of the screen on initial page load, showing a crowd of people towards the bottom of the screen, to let the user know that the tool helps them to understand what people collectively are searching for in relation to a brand.
 
-  ![Hero image screenshot](assets/screenshots/screen_hero.png "Hero")
+  [![Background image screenshot](https://i.gyazo.com/675931b30bde58fffb5b44920e24db60.jpg)](https://gyazo.com/675931b30bde58fffb5b44920e24db60)
 
 - __Rotating search seed suggestions__
 
