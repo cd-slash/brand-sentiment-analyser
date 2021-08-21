@@ -57,7 +57,7 @@ function populateResultsList(listName, results) {
         });
     }
     else {
-        noResultsItem = createListItem('No results found');
+        let noResultsItem = createListItem('No results found');
         // delete the add to research list button
         noResultsItem.getElementsByTagName('i')[0].remove();
         noResultsItem.classList.add('no-results-item');
@@ -125,7 +125,7 @@ function addToResearch(e) {
     // true means deep clone the list item - i.e. get the elements within it too
     let newNode = document.getElementById(itemID).cloneNode(true);
     // get the icon element in the list item
-    let iconNode = newNode.getElementsByTagName("i")[0]
+    let iconNode = newNode.getElementsByTagName("i")[0];
     // remove the add to research button
     iconNode.classList.remove("fa-plus-circle");
     iconNode.classList.remove("add-to-research");
