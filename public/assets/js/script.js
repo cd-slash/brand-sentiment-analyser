@@ -8,11 +8,11 @@ function createListItem(itemText) {
     // Give the item a unique ID - source: https://gist.github.com/gordonbrander/2230317
     const id = Math.random().toString(36).substr(2, 9);
     element.id = id;
-    element.className = 'list-item'
+    element.className = 'list-item';
     element.innerHTML = `
         <span>${itemText}</span>
         <i class="fas fa-plus-circle add-to-research" onclick="addToResearch(this);"></i>
-    `
+    `;
     return element;
 
 }
@@ -115,7 +115,7 @@ function alternateBrandSuggestions() {
         'Amazon',
         'Coca Cola',
         'your brand'
-    ]
+    ];
     typewriterText('title-search-seed', brands, 50);
 }
 
