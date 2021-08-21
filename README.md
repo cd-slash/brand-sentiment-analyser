@@ -49,7 +49,7 @@ When users are presented with topical search terms, questions, competitors or co
   - All results are derived from Google's autocomplete suggestions API
   - The results area is hidden initially to direct the user to complete the seed input first
 
-  ![Benefits section screenshot](assets/screenshots/screen_benefits.png "Benefits")
+  [![Results area screenshot](https://i.gyazo.com/b82ef68a275664a7380753d90fbc2eee.gif)](https://gyazo.com/b82ef68a275664a7380753d90fbc2eee)
 
 - __Loading animation__
 
