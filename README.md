@@ -56,13 +56,13 @@ When users are presented with topical search terms, questions, competitors or co
   - The user is reassured that the system is calculating the results by presenting a loading animation on each results box until the query to the server is finished
   - Each loading animation is independently controlled, in case the timing of the queries resolving is not synced
 
-  ![Checklist screenshot](assets/screenshots/screen_checklist.png "Checklist")
+  [![Loading animation screenshot](https://i.gyazo.com/7b45295ff69128fdc08148d939126bed.gif)](https://gyazo.com/7b45295ff69128fdc08148d939126bed)
 
 - __Help tooltips__
 
   - The user can see the purpose of each results list by hovering over (or touching on mobile) the "?" icon
 
-  ![Class picks screenshot](assets/screenshots/screen_picks.png "Class picks")
+  [![Tooltip screenshot](https://i.gyazo.com/2ad5d306b313e2110d57cd2ee320a83a.gif)](https://gyazo.com/2ad5d306b313e2110d57cd2ee320a83a)
 
 - __Top searches__ 
 
