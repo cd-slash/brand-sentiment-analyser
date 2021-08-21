@@ -4,6 +4,8 @@ The Brand Sentiment Analyser (BSA) allows marketers, brand owners, customers or 
 
 BSA is heavily influenced by [Answer The Public](https://answerthepublic.com), and while similar, it is not intended to be a clone of that service. Answer The Public presents users with graphical depictions of search terms, while this tool presents a list of terms that enables further research.
 
+When users are presented with topical search terms, questions, competitors or concerns related to a brand, they can be saved for later research and compared to terms presented by subsequent analysis of other brands.
+
 ## Features 
 
 - __Heading__
