@@ -33,7 +33,7 @@ When users are presented with topical search terms, questions, competitors or co
   - Immediately below the heading and seed suggestions, there is a clear call to action, asking the user to enter a search seed to get results.
   - The placeholder text within the seed input box 
 
-  ![Navbar screenshot](assets/screenshots/screen_navbar.png "Navbar")
+  [![Heading screenshot](https://i.gyazo.com/301c577314513f81bf1ac59cdc80cf1c.png)](https://gyazo.com/301c577314513f81bf1ac59cdc80cf1c)
 
 - __Search seed input and Analyse button__
 
