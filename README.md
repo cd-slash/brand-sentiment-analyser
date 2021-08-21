@@ -68,7 +68,7 @@ When users are presented with topical search terms, questions, competitors or co
 
   - This list presents the top search suggestions - i.e. the most common search terms that Google expects people to search for given the seed term that the user provided 
 
-  ![Footer screenshot](assets/screenshots/screen_footer.png "Footer")
+  [![Top searches screenshot](https://i.gyazo.com/4c838f404cc30820a1e3ce934d777425.png)](https://gyazo.com/4c838f404cc30820a1e3ce934d777425)
 
 - __Questions__ 
 
