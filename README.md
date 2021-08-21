@@ -73,8 +73,9 @@ When users are presented with topical search terms, questions, competitors or co
 - __Questions__ 
 
   - The most common search terms that include the words "what" or "which" that Google expects people to search for given the provided seed
+  - Questions can be quite long, so are truncated with an ellipsis rather than wrapping to multiple lines to preserve the list layout across all boxes
 
-  ![Footer screenshot](assets/screenshots/screen_footer.png "Footer")
+  [![Questions screenshot](https://i.gyazo.com/1fad721ed4a598d9588e6fef47da743e.png)](https://gyazo.com/1fad721ed4a598d9588e6fef47da743e)
 
 - __Competitors__ 
 
